@@ -22,11 +22,16 @@ function App() {
    <DarkModeToggle/>
     
    <TopHead/>
-   <Usabout/>
+   
   
   
   
-  
+   <Routes>
+   
+    <Route path="/" element={<Usabout/>}></Route>
+    
+    
+   </Routes>
    
    
    </BrowserRouter>
