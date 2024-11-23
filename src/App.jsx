@@ -20,16 +20,13 @@ function App() {
     <DarkModeProvider>
    <BrowserRouter>
    <DarkModeToggle/>
- 
-   <TopHead/>
-  
-  
-   <Routes>
-    <Route path="/" element={<Home/>}></Route>
-    <Route path="/about" element={<Usabout/>}></Route>
-    <Route path="/card" element={<CardGrid/>}></Route>
     
-   </Routes>
+   <TopHead/>
+   <Usabout/>
+  
+  
+  
+  
    
    
    </BrowserRouter>
