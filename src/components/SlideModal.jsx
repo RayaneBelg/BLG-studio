@@ -5,6 +5,27 @@ import { SLIDE } from "../assets/data";
 export default function SlideModal() {
   const [current, setCurrent] = useState(0); // Current index of SLIDE array
   const [imageIndex, setImageIndex] = useState(0); // Current index of slide array (nested images)
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX); // Record where the touch started
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX); // Track touch movement
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 50) {
+      // Swipe left
+      handleNext();
+    }
+
+    if (touchEnd - touchStart > 50) {
+      // Swipe right
+      handlePrev();
+    }}
 
   // Handle navigation for the slides
   const handlePrev = () => {
