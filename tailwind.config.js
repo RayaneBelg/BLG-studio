@@ -11,7 +11,7 @@ export default {
         teko: ['Teko', 'sans-serif'],         // Add Teko
       },
       colors : {
-        rose : "#F5004F",
+        rose : "#aae114",
         lightText : '#334155',
         darkText: '  #d1d8d8 ',
 
