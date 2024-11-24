@@ -14,28 +14,24 @@ function App() {
   
 
   return (
-    <div className="dark:bg-DarkBg bg-lightBg ">
+    <div className="dark:bg-DarkBg bg-lightBg overflow-hidden ">
 
     
     <DarkModeProvider>
-   <BrowserRouter>
-   <DarkModeToggle/>
+   
+   
     
    <TopHead/>
+   <Usabout/>
    
    
   
   
   
-   <Routes>
-   
-    <Route path="/" element={<Usabout/>}/>
-    
-    
-   </Routes>
+   <DarkModeToggle/>
    
    
-   </BrowserRouter>
+   
    </DarkModeProvider>
 
    </div>

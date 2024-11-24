@@ -16,7 +16,7 @@ export default function Usabout() {
             {/* Header Section */}
             <div className='flex-col flex  justify-center mt-[5%] md:mt-0  p-2 '>
                 <div className='font-serif font-bold uppercase text-[7vw]    flex items-center  overflow-hidden flex-col text-lightText dark:text-darkText'>
-                    <div className='flex gap-6'>
+                    <div className='flex gap-6 overflow-hidden'>
 
                   
                       <motion.span 
@@ -34,12 +34,12 @@ export default function Usabout() {
         initial={{scaleX : 0}}
         animate={{scaleX : 1}}
         transition={{duration:  .5}}
-        className='h-[3px] bg-lightText dark:bg-darkText w-[80%]'></motion.div>
+        className='h-[3px] bg-lightText dark:bg-darkText w-[80%] mb-3'></motion.div>
                 </div>
                 
                 <motion.div 
 
-    className='gap-1 font-teko scrollbar-track-slate-500 lg:text-[1vw]  text-lightText dark:text-darkText font-bold uppercase flex items-end justify-center overflow-hidden flex-wrap'
+    className='gap-1 font-teko scrollbar-track-slate-500   text-lightText dark:text-darkText font-bold uppercase flex items-end justify-center overflow-hidden flex-wrap'
 >
     {desc.split(" ").map((word, idx) => (
         <motion.span 
@@ -59,7 +59,7 @@ export default function Usabout() {
             <div className='overflow-hidden flex flex-col my-4'>
                 <motion.h1 initial={{ opacity: 0 , y : 200}}
             animate={{ opacity: 1,  y : 0}}
-            transition={{ duration :  1 , delay : 1}} className='uppercase font-teko font-bold md:text-4xl text-2xl text-lightText dark:text-darkText'>Projects</motion.h1>
+            transition={{ duration :  1 , delay : 1}} className='uppercase font-teko font-bold md:text-5xl text-2xl text-lightText dark:text-darkText'>Projects</motion.h1>
              <motion.div 
         initial={{scaleX : 0}}
         animate={{scaleX : 1}}
