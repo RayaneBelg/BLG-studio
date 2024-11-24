@@ -4,7 +4,7 @@ import Cards from './Cards';
 
 export default function GridProj() {
   return (
-    <div className="grid md:grid-cols-3 p-4 w-[80%] md:gap-10 gap-5 overflow-y-auto border  border-slate-700 shadow-inner shadow-black  md:max-h-[70vh] h-[45vh] scrollbar  scrollbar-thumb-rose md:scrollbar-track-slate-700 bg-slate-200 ">
+    <div className="grid md:grid-cols-3 p-4 w-[80%] md:gap-10 gap-5 overflow-y-auto border  border-slate-700 shadow-inner shadow-black  md:max-h-[80vh] h-[45vh] scrollbar  scrollbar-thumb-rose md:scrollbar-track-slate-700 bg-slate-200 ">
       {SLIDE.map((proj, index) => (
         <Cards
         

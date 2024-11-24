@@ -9,6 +9,7 @@ import DarkMode from "./components/DarkMode"
 import { DarkModeProvider } from "./components/DarkModeProvider"
 import DarkModeToggle from "./components/DarkModeToggle"
 import CardGrid from "./components/CardGrid"
+import SlideModal from "./components/SlideModal"
 
 function App() {
   
@@ -16,13 +17,16 @@ function App() {
   return (
     <div className="dark:bg-DarkBg bg-lightBg overflow-hidden ">
 
-    
+   
+
+
     <DarkModeProvider>
    
    
     
    <TopHead/>
    <Usabout/>
+   
    
    
   
