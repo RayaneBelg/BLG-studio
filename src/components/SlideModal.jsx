@@ -41,8 +41,8 @@ export default function SlideModal() {
   };
 
   return (
-    <div className="h-screen flex justify-center items-center">
-      <div className="h-80vh w-3/4 border-2 flex justify-between items-center relative">
+    <div className="h-screen flex justify-center items-center ">
+      <div className="h-80vh w-3/4 border-2 flex justify-between items-center relative ">
         {/* Left Arrow */}
         <BsChevronLeft
           size={50}

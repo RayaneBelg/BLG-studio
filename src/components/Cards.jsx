@@ -61,7 +61,7 @@ export default function Cards({ infos }) {
               <h1 className="text-xl font-bold">{infos.title}</h1>
 
               {/* Slider Section */}
-              <div className="flex md:flex-row flex-col justify-between  md:items-center border-2 w-[90%] md:h-[90%]">
+              <div className="flex md:flex-row flex-col justify-between  md:items-center border-2 w-[90%] md:h-[90%] px-5">
                 {/* Slider */}
                 <div className="flex flex-col justify-center items-center md:w-[50%] h-[min-content] relative">
                   <BsChevronLeft
