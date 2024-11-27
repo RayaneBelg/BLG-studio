@@ -81,7 +81,7 @@ export default function Cards({ infos }) {
       key={imageIndex} // Ensure animations are tied to the current slide
       src={infos.slide[imageIndex]}
       alt={`Slide ${imageIndex}`}
-      className="h-[40vh] object-contain"
+      className="h-[40vh] object-contain max-w-[80%]"
       initial={{ opacity: 0, x: 100 }} // Slide-in animation
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -100 }}
