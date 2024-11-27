@@ -33,7 +33,7 @@ export default function Cards({ infos }) {
       className={`${ infos.id % 3 === 0 ?   'col-span-2 ' : 'col-span-1'} shadow-md shadow-black p-2 flex flex-col bg-lightBg dark:bg-DarkBg text-lightText dark:text-darkText font-teko `}
     >
       {/* Card Content */}
-      <div className="flex justify-center">
+      <div className="flex justify-center my-1">
         <img className="h-[10vh]" src={infos.img} alt={infos.title} />
       </div>
    
@@ -81,7 +81,7 @@ export default function Cards({ infos }) {
       key={imageIndex} // Ensure animations are tied to the current slide
       src={infos.slide[imageIndex]}
       alt={`Slide ${imageIndex}`}
-      className="h-[40vh] object-contain max-w-[80%]"
+      className="h-[40vh]  object-contain max-w-[80%]"
       initial={{ opacity: 0, x: 100 }} // Slide-in animation
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -100 }}
