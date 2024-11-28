@@ -30,7 +30,7 @@ export default function Cards({ infos }) {
       transition={{ delay: 1.5 + infos.id * 0.2 }}
       onClick={() => setSelected(infos)}
     
-      className={`${ infos.id % 3 === 0 ?   'col-span-2 ' : 'col-span-1'} shadow-md shadow-black p-2 flex flex-col bg-lightBg dark:bg-DarkBg text-lightText dark:text-darkText font-teko `}
+      className={`${ infos.id % 3 === 0 ?   'col-span-2 ' : 'col-span-1'} shadow-md shadow-black p-2 flex flex-col bg-lightBg dark:bg-DarkBg text-lightText dark:text-darkText font-teko  `}
     >
       {/* Card Content */}
       <div className="flex justify-center my-1">
@@ -45,7 +45,10 @@ export default function Cards({ infos }) {
       <AnimatePresence>
         {selected && (
           <motion.div
-            onClick={closeModal}
+          onClick={(e) => {
+            console.log("Modal background clicked");
+            closeModal();
+          }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -85,14 +88,20 @@ export default function Cards({ infos }) {
       initial={{ opacity: 0, x: 100 }} // Slide-in animation
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -100 }}
-      transition={{ duration: 0.5 }}
+      transition={{
+        type: "spring",   // Use spring animation
+        stiffness: 60,   // Controls the "bounciness" of the spring
+        damping: 10,      // Reduces the oscillation
+        mass: 0.5,        // Affects how heavy the spring feels
+        duration: 1.5,    // Ensures the animation finishes in 0.9 seconds
+      }}
     />
   )}
 
   {/* Right Arrow */}
   <motion.div
     whileHover={{ scale: 1.3 }} // Hover effect
-    transition={{ type: "spring", stiffness: 300 }}
+    transition={{ type: "spring", stiffness: 100 }}
     className="absolute right-2 top-1/2 transform -translate-y-1/2 dark:text-rose text-lightText cursor-pointer"
     onClick={handleNext}
   >
