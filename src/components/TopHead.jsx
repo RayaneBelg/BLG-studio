@@ -24,6 +24,16 @@ const Navbar = () => {
       className="z-50 fixed flex items-center justify-center text-lightText border-t-0 bg-rose h-[3vh] w-[10vh] left-[50%] transform translate-x-[-50%] border border-lightText dark:border-lightBg font-bold uppercase font-teko text-xl shadow-md shadow-black dark:shadow-lightBg"
     >
       <h1 className="">About</h1>
+
+      {
+        menuOpen && (
+          <div>
+            <div>
+              About Me 
+            </div>
+          </div>
+        )
+      }
     </motion.div>
   );
 };

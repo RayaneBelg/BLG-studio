@@ -22,21 +22,105 @@ import { FaReact } from "react-icons/fa";
 import tabcookie from "../../public/tabcookie.png";
 import gmtlaptop from "../../public/gmtlaptop.png"
 import climtop from "../../public/climtop.png"
+import bmdesk from "../../public/bmdesk.png"
+import phoemillion from "../../public/phoemillion.png"
 
 
 
 
 
 export const SLIDE = [
-    {id:1 ,img : gmt , title : 'GMT' , desc : 'fashion designer brand' , service : "E-commerce boutique", stack : SiWoocommerce  , phone :gmtphone , slide : [ gmtphone , tablet , gmtlaptop] , extend : "Créateur de mode français, un style hautement illustré,un univers transcrit dans une boutique e-commerce crée avec wooCommerce" },// Red
-    {id:2,img :climax , title : 'CLIMAX FIGHT A.' , desc : "Club de passionés d'arts martiaux" , service : "E-commerce boutique", stack : FaReact , laptop : climaxlaptop , phone : phoneclimax , slide : [ phoneclimax , climaxtab, climtop]}, // Green
-    {id:3 ,img :ocookies , title : 'OCookies' , desc  :'La Fabrique à Biscuit' , service : "E-commerce boutique", stack : "WooCommerce" , laptop : cookietop , phone : phonecook , slide : [cookiephone, tabcookie, cookietop]},
-    {id:4 ,img :jibb , title : 'JM coaching' , desc  :'Coach sportif' , service : "E-commerce boutique", stack : "WooCommerce"}, 
-    {id:5 ,img :ocookies , title : 'OCookies' , desc  :'du fait de la bataille des frontières 1958' , service : "E-commerce boutique", stack : "WooCommerce"},
-    {id:6 ,img :BM, title : 'JM coaching' , desc  :'du fait de la bataille des frontières 1958' , service : "E-commerce boutique", stack : "WooCommerce"},
-    {id:7 ,img :ocookies , title : 'OCookies' , desc  :'du fait de la bataille des frontières 1958' , service : "E-commerce boutique", stack : "WooCommerce"},
-    {id:8 ,img :BM, title : 'JM coaching' , desc  :'du fait de la bataille des frontières 1958' , service : "E-commerce boutique", stack : "WooCommerce"},
-    {id:9 ,img :ocookies , title : 'OCookies' , desc  :'du fait de la bataille des frontières 1958' , service : "E-commerce boutique", stack : "WooCommerce"},
-    {id:10 ,img :BM, title : 'JM coaching' , desc  :'du fait de la bataille des frontières 1958' , service : "E-commerce boutique", stack : "WooCommerce"},  // Blue
+                    {                    
+      
+      
+                        id:1 ,
+                        img : gmt ,
+                         title : 'GRAND méchant' , 
+                         desc : 'fashion designer ' , 
+                         service : "E-commerce boutique", 
+                         stack : SiWoocommerce  ,
+                           slide : [ gmtphone , tablet , gmtlaptop] , 
+                           extend : "Créateur de mode français, un style hautement illustré,un univers transcrit dans une boutique e-commerce crée avec wooCommerce"
+                          
+                          
+                          },// Red
+
+
+
+
+                        {
+                          
+                          id:2,
+
+                          img :climax ,
+
+                           title : 'CLIMAX FIGHT A.' ,
+
+                            desc : "Club d'arts martiaux" ,
+
+                             service : "Website", 
+
+                             stack : FaReact , 
+
+                             laptop : climaxlaptop , 
+
+                             phone : phoneclimax , 
+
+                             slide : [ phoneclimax , climaxtab, climtop],
+                             extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année, avec des inscriptions possibles à tout moment – rejoignez-nous pour repousser vos limites ! "
+                            
+                            },
+                            
+                            
+                            // Green
+                         {id:3 ,
+                          
+                          img :ocookies ,
+                          
+                          title : 'OCookies' , 
+                          
+                          desc  :'La Fabrique à Biscuit' , 
+                          
+                          service : "E-commerce boutique",
+                          
+                          
+                          stack : "WooCommerce" , 
+                          
+                          laptop : cookietop ,
+                          
+                          phone : phonecook , 
+                          
+                          slide : [cookiephone, tabcookie, cookietop]
+                        
+                        },
+
+                       {id:4 ,img :jibb , title : 'JM coaching' , desc  :'Coach sportif' , service : "E-commerce boutique", stack : "WooCommerce"}, 
+
+   
+
+                    {
+                      
+                      
+                      id:5,
+
+
+                      img :BM, 
+
+                      title : 'JM coaching' ,
+
+
+                       desc  :'FASHION DESIGNER' ,
+
+                       service : "E-commerce boutique",
+
+                       stack : "WooCommerce" ,
+
+                        slide : [ phoemillion , tablet , bmdesk]
+                      
+                      
+                      },
+
+                   
+     // Blue
   // Mag4nta
 ]

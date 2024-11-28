@@ -30,11 +30,11 @@ export default function Cards({ infos }) {
       transition={{ delay: 1.5 + infos.id * 0.2 }}
       onClick={() => setSelected(infos)}
     
-      className={`${ infos.id % 3 === 0 ?   'col-span-2 ' : 'col-span-1'} shadow-md shadow-black p-2 flex flex-col bg-lightBg dark:bg-DarkBg text-lightText dark:text-darkText font-teko  `}
+      className={`${ infos.id % 3 === 0 ?   'col-span-2 ' : 'col-span-1'}  text-center shadow-md shadow-black p-2 flex flex-col bg-lightBg dark:bg-DarkBg text-lightText dark:text-darkText font-teko  `}
     >
       {/* Card Content */}
       <div className="flex justify-center my-1">
-        <img className="h-[10vh]" src={infos.img} alt={infos.title} />
+        <img className="h-[10vh] " src={infos.img} alt={infos.title} />
       </div>
    
       <div className="font-bold uppercase md:text-xl text-[2ch]">
@@ -47,7 +47,7 @@ export default function Cards({ infos }) {
           <motion.div
           onClick={(e) => {
             console.log("Modal background clicked");
-            closeModal();
+            e.closeModal();
           }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -59,10 +59,14 @@ export default function Cards({ infos }) {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
-              className="bg-lightBg dark:bg-DarkBg  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[50vh] w-[85%] md:w-[70%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700"
+              className="bg-lightBg dark:bg-DarkBg  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[55%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700"
               onClick={(e) => e.stopPropagation()} // Prevent click events from bubbling to close modal
             >
-              <h1 className="md:text-3xl text-2xl uppercase font-extrabold underline-offset-4 underline">{infos.title}</h1>
+              <motion.h1 
+              initial={{opacity : 0}}
+              animate={{opacity : 1}}
+              transition={{duration : .8 , delay : .8}}
+              className="md:text-3xl text-2xl uppercase font-extrabold underline-offset-4 underline mt-4">{infos.title}</motion.h1>
               {/* Slider Section */}
               <div className="flex md:flex-row flex-col justify-between  md:items-center  w-[95%] md:h-[90%]  ">
                 {/* Slider */}
@@ -111,10 +115,12 @@ export default function Cards({ infos }) {
 
 
                 {/* Info Section */}
-                <div className="flex flex-col justify-center md:gap-5 md:w-[50%] items-start  md:h-[100%]">
+                <motion.div  initial={{opacity : 0}}
+              animate={{opacity : 1}}
+              transition={{duration : .8 , delay : .8}} className="flex flex-col justify-center md:gap-5 md:w-[50%] items-start  md:h-[100%]">
                  
                 <h1 className="md:text-3xl text-2xl uppercase font-extrabold ">{infos.desc}</h1>
-                <p className="text-left">
+                <p className="text-left text-xl">
                    {infos.extend}
                   </p>
                   <p className=" ">
@@ -124,7 +130,7 @@ export default function Cards({ infos }) {
                  
                  
                 
-                </div>
+                </motion.div>
               </div>
 
               <button
