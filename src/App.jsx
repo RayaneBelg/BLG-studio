@@ -17,6 +17,8 @@ function App() {
   return (
    
 
+   <div className="h-screen overflow-hidden p-2  dark:bg-DarkBg bg-lightBg">
+
    
 
 
@@ -40,7 +42,7 @@ function App() {
    
    </DarkModeProvider>
 
-   
+   </div>
   )
 }
 
