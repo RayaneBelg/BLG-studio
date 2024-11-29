@@ -11,7 +11,7 @@ export default function Usabout() {
   
 
     return (
-        <div className='flex items-center flex-col  overflow-hidden p-4  dark:bg-DarkBg bg-lightBg'>
+        <div className='flex items-center flex-col h-[100vh] overflow-hidden p-4  dark:bg-DarkBg bg-lightBg'>
 
             {/* Header Section */}
             <div className='flex-col flex  justify-center mt-[2%] md:mt-0  p-2 overflow-hidden'>
