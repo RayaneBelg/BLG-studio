@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden; /* Prevent unintended scrollbars */
 }
 
@@ -13,6 +13,6 @@ html, body {
 
 #root {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
