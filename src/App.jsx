@@ -23,11 +23,11 @@ function App() {
     <DarkModeProvider>
    
    
-    <TopHead/>
+    
   
    <Usabout/>
 
-   <DarkModeToggle/>
+   
    
    
    

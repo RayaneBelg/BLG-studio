@@ -4,6 +4,8 @@ import { SLIDE } from '../assets/data'
 import HorizontalCardScroll from './HorizontalCardScroll'
 import Proj from '../components/Proj'
 import GridProj from '../components/GridProj'
+import DarkModeToggle from "./components/DarkModeToggle"
+import TopHead from "./components/TopHead"
 
 export default function Usabout() {
     const title = "BLG STUDIO ®"
@@ -12,7 +14,7 @@ export default function Usabout() {
 
     return (
         <div className='flex items-center flex-col h-[90vh] md:h-screen overflow-hidden p-4  dark:bg-DarkBg bg-lightBg'>
-
+            <TopHead/>
             {/* Header Section */}
             <div className='flex-col flex  justify-center mt-[2%] md:mt-0  p-2 overflow-hidden'>
                 <div className='font-serif font-bold uppercase text-[7vw]    flex items-center  overflow-hidden flex-col text-lightText dark:text-darkText'>
@@ -26,7 +28,7 @@ export default function Usabout() {
             transition={{ duration :  1 }}
             
         >
-           [ blg studioo ©]
+           [ blg studio ©]
         </motion.span>
         
          </div>
@@ -73,7 +75,7 @@ export default function Usabout() {
             <GridProj/>
             
          
-
+            <DarkModeToggle/>
         </div>
     )
 }
