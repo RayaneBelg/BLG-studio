@@ -1,0 +1,13 @@
+:root {
+  --vh: 100vh;
+}
+
+@media (orientation: portrait) {
+  :root {
+    --vh: calc(100vh - 3rem); /* Adjust as needed */
+  }
+}
+
+.custom-h-screen {
+  height: var(vh);
+}
