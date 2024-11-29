@@ -15,7 +15,7 @@ function App() {
   
 
   return (
-    <div className="dark:bg-DarkBg bg-lightBg overflow-hidden ">
+   
 
    
 
@@ -38,7 +38,7 @@ function App() {
    
    </DarkModeProvider>
 
-   </div>
+   
   )
 }
 

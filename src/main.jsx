@@ -4,7 +4,9 @@ import './index.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
+  <div className="dark:bg-DarkBg bg-lightBg overflow-hidden ">
   <StrictMode>
     <App />
-  </StrictMode>,
+  </StrictMode>
+  </div>,
 )
