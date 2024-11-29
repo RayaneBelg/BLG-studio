@@ -11,7 +11,7 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className=" absolute left-[50%] transform translate-x-[-50%] bottom-2 z-50"
+      className=" absolute left-[50%] transform translate-x-[-50%] bottom-0 z-50"
     >
       {darkMode ? <MdSunny size={40} className=' text-rose   shadow-xl rounded-full shadow-lightBg bg-light ' /> : 
       <IoMdMoon  size={40} className='text-rose   shadow-xl rounded-full shadow-black bg-lightText '/>
