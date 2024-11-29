@@ -24,7 +24,7 @@ function App() {
    
    
     
-   <TopHead/>
+  
    <Usabout/>
    
    
@@ -32,7 +32,7 @@ function App() {
   
   
   
-   <DarkModeToggle/>
+  
    
    
    
