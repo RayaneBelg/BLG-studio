@@ -26,7 +26,7 @@ export default function Usabout() {
             transition={{ duration :  1 }}
             
         >
-           [ blg studio ©]
+           [ blg studioo ©]
         </motion.span>
         
          </div>
