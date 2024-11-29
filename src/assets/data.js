@@ -23,7 +23,10 @@ import tabcookie from "../../public/tabcookie.png";
 import gmtlaptop from "../../public/gmtlaptop.png"
 import climtop from "../../public/climtop.png"
 import bmdesk from "../../public/bmdesk.png"
+import bmtab from "../../public/bmtab.png"
 import phoemillion from "../../public/phoemillion.png"
+import { FaWordpress } from "react-icons/fa";
+import { SiShopify } from "react-icons/si";
 
 
 
@@ -38,9 +41,9 @@ export const SLIDE = [
                          title : 'GRAND méchant' , 
                          desc : 'fashion designer ' , 
                          service : "E-commerce boutique", 
-                         stack : SiWoocommerce  ,
+                         stack : [FaWordpress , SiWoocommerce] ,
                            slide : [ gmtphone , tablet , gmtlaptop] , 
-                           extend : "Créateur de mode français, un style hautement illustré,un univers transcrit dans une boutique e-commerce crée avec wooCommerce"
+                           extend : "Créateur de mode français, un style hautement illustré dans un univers dark cartoon "
                           
                           
                           },// Red
@@ -60,14 +63,14 @@ export const SLIDE = [
 
                              service : "Website", 
 
-                             stack : FaReact , 
+                             stack : [FaReact , FaWordpress] ,
 
                              laptop : climaxlaptop , 
 
                              phone : phoneclimax , 
 
                              slide : [ phoneclimax , climaxtab, climtop],
-                             extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année, avec des inscriptions possibles à tout moment – rejoignez-nous pour repousser vos limites ! "
+                             extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année  ! "
                             
                             },
                             
@@ -84,13 +87,14 @@ export const SLIDE = [
                           service : "E-commerce boutique",
                           
                           
-                          stack : "WooCommerce" , 
+                          stack : [ FaWordpress, SiWoocommerce ] , 
                           
                           laptop : cookietop ,
                           
                           phone : phonecook , 
                           
-                          slide : [cookiephone, tabcookie, cookietop]
+                          slide : [cookiephone, tabcookie, cookietop],
+                          extend : "l’univers savoureux d’O’Cookies, où la simplicité rencontre la qualité. Des cookies uniques  confectionnés avec soin, mettant en avant des ingrédients de première qualité"
                         
                         },
 
@@ -106,16 +110,17 @@ export const SLIDE = [
 
                       img :BM, 
 
-                      title : 'JM coaching' ,
+                      title : 'Batiste Million' ,
 
 
                        desc  :'FASHION DESIGNER' ,
 
                        service : "E-commerce boutique",
 
-                       stack : "WooCommerce" ,
+                       stack : [SiShopify] ,
 
-                        slide : [ phoemillion , tablet , bmdesk]
+                        slide : [ phoemillion , bmtab , bmdesk],
+                        extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année  ! "
                       
                       
                       },

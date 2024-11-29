@@ -62,11 +62,7 @@ export default function Cards({ infos }) {
               className="bg-lightBg dark:bg-DarkBg  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[55%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700"
               onClick={(e) => e.stopPropagation()} // Prevent click events from bubbling to close modal
             >
-              <motion.h1 
-              initial={{opacity : 0}}
-              animate={{opacity : 1}}
-              transition={{duration : .8 , delay : .8}}
-              className="md:text-3xl text-2xl uppercase font-extrabold underline-offset-4 underline mt-4">{infos.title}</motion.h1>
+            
               {/* Slider Section */}
               <div className="flex md:flex-row flex-col justify-between  md:items-center  w-[95%] md:h-[90%]  ">
                 {/* Slider */}
@@ -88,10 +84,10 @@ export default function Cards({ infos }) {
       key={imageIndex} // Ensure animations are tied to the current slide
       src={infos.slide[imageIndex]}
       alt={`Slide ${imageIndex}`}
-      className="h-[40vh]  object-contain max-w-[80%]"
-      initial={{ opacity: 0, x: 100 }} // Slide-in animation
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -100 }}
+      className="h-[40vh]  object-contain "
+      initial={{ opacity: 0,  }} // Slide-in animation
+      animate={{ opacity: 1,  }}
+      exit={{ opacity: 0,  }}
       transition={{
         type: "spring",   // Use spring animation
         stiffness: 60,   // Controls the "bounciness" of the spring
@@ -117,17 +113,21 @@ export default function Cards({ infos }) {
                 {/* Info Section */}
                 <motion.div  initial={{opacity : 0}}
               animate={{opacity : 1}}
-              transition={{duration : .8 , delay : .8}} className="flex flex-col justify-center md:gap-5 md:w-[50%] items-start  md:h-[100%]">
+              transition={{duration : .8 , delay : .8}} className="flex flex-col justify-center gap-3 md:gap-5 md:w-[50%] items-start  md:h-[100%]">
+                  <motion.h1 
+           
+              className="md:text-3xl text-3xl uppercase font-extrabold underline-offset-4 underline mt-4">{infos.title}</motion.h1>
                  
-                <h1 className="md:text-3xl text-2xl uppercase font-extrabold ">{infos.desc}</h1>
-                <p className="text-left text-xl">
+                <h1 className="text-2xl uppercase font-bold ">{infos.desc}</h1>
+                <p className=" text-lg text-justify font-bold">
                    {infos.extend}
                   </p>
-                  <p className=" ">
-                   
-                    {infos.stack ? <infos.stack size={90} /> : null}
-                  </p>
-                 
+
+  <p className="flex gap-2">
+  {infos.stack && infos.stack.map((Icon, index) => (
+    <Icon key={index} size={45} />
+  ))}
+</p>   
                  
                 
                 </motion.div>
