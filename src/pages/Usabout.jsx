@@ -14,7 +14,7 @@ export default function Usabout() {
         <div className='flex items-center flex-col  overflow-hidden  h-screen'>
 
             {/* Header Section */}
-            <div className='flex-col flex  justify-center mt-[5%] md:mt-0  p-2 '>
+            <div className='flex-col flex  justify-center mt-[2%] md:mt-0  p-2 '>
                 <div className='font-serif font-bold uppercase text-[7vw]    flex items-center  overflow-hidden flex-col text-lightText dark:text-darkText'>
                     <div className='flex gap-6 overflow-hidden'>
 
@@ -26,7 +26,7 @@ export default function Usabout() {
             transition={{ duration :  1 }}
             
         >
-           [ blg studioo ©]
+           [ blg studio ©]
         </motion.span>
         
          </div>
