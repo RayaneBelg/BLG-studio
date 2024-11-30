@@ -8,7 +8,7 @@ export default function Cards({ infos }) {
   const [selected, setSelected] = useState(null);
   const [imageIndex, setImageIndex] = useState(0); // Current index for the slider
 
-  const closeModal = () => setSelected(null);
+  const closeModal = () => {setSelected(null)};
 
   // Handle slider navigation
   const handlePrev = () => {
@@ -45,10 +45,7 @@ export default function Cards({ infos }) {
       <AnimatePresence>
         {selected && (
           <motion.div
-          onClick={(e) => {
-            console.log("Modal background clicked");
-            e.closeModal();
-          }}
+          onClick={closeModal}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
