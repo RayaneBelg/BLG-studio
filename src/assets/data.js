@@ -98,7 +98,26 @@ export const SLIDE = [
                         
                         },
 
-                       {id:4 ,img :jibb , title : 'JM coaching' , desc  :'Coach sportif' , service : "E-commerce boutique", stack : "WooCommerce"}, 
+                       {id:4 ,
+                        
+                        img :jibb , 
+                        
+                        title : 'JM coaching' , 
+                        
+                        desc  :'Coach sportif' , 
+                        
+                        service : "E-commerce boutique", 
+
+                        stack : [ FaWordpress, SiWoocommerce ] , 
+                        
+                         
+
+                        slide : [cookiephone, tabcookie, cookietop],
+
+
+                        extend : "l’univers savoureux d’O’Cookies, où la simplicité rencontre la qualité. Des cookies uniques  confectionnés avec soin, mettant en avant des ingrédients de première qualité" } ,
+
+
 
    
 
