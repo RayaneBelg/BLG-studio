@@ -56,7 +56,7 @@ export default function Cards({ infos }) {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
-              className="bg-lightBg dark:bg-DarkBg  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[55%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700 dark:border-rose border border-lightText"
+              className="bg-lightBg dark:bg-DarkBg  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[65%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700 dark:border-rose border border-lightText "
               onClick={(e) => e.stopPropagation()} // Prevent click events from bubbling to close modal
             >
             
@@ -67,12 +67,13 @@ export default function Cards({ infos }) {
 <div className="flex flex-col justify-center items-center md:w-[50%] h-[min-content] relative  md:h-[100%] overflow-x-hidden">
   {/* Left Arrow */}
   <motion.div
-    whileHover={{ scale: 1.3 }} // Hover effect
+    whileHover={{ scale: 1.075 }} 
+    whileTap={{scale : 0.9}}
     transition={{ type: "spring", stiffness: 300 }}
     className="absolute left-2 top-1/2 transform -translate-y-1/2 dark:text-rose text-lightText cursor-pointer"
     onClick={handlePrev}
   >
-    <BsChevronLeft size={30} />
+    <BsChevronLeft className="dark:shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888] shadow-[5px_5px_10px_#717575,-5px_-5px_10px_#ffffff] rounded-full p-1 " size={40} />
   </motion.div>
 
   {/* Slide Image */}
@@ -97,12 +98,13 @@ export default function Cards({ infos }) {
 
   {/* Right Arrow */}
   <motion.div
-    whileHover={{ scale: 1.3 }} // Hover effect
+    whileHover={{ scale: 1.075 }} 
+    whileTap={{scale : 0.9}}
     transition={{ type: "spring", stiffness: 100 }}
     className="absolute right-2 top-1/2 transform -translate-y-1/2 dark:text-rose text-lightText cursor-pointer"
     onClick={handleNext}
   >
-    <BsChevronRight size={30} />
+    <BsChevronRight size={40}  className="dark:shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888] shadow-[5px_5px_10px_#717575,-5px_-5px_10px_#ffffff] rounded-full p-1  " />
   </motion.div>
 </div>
 

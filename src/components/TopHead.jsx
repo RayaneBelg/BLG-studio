@@ -39,7 +39,7 @@ const Navbar = () => {
                 <motion.button
                   onClick={handleInfoToggle}
                   
-                  className="px-6 py-3  text-lightBg shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888]"
+                  className="px-6 py-3 rounded-full text-lightBg shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888]"
                 
                 >
                   [BLG Studio]
