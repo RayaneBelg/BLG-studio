@@ -16,7 +16,7 @@ export default function Usabout() {
         <div className='flex items-center flex-col '>
             
             {/* Header Section */}
-            <div className='flex-col flex  justify-center mt-[2%] md:mt-0  p-2 overflow-hidden'>
+            <div className='flex-col flex  justify-center   mt-4  p-2 overflow-hidden'>
                 <div className='font-serif font-bold uppercase text-[7vw]    flex items-center  overflow-hidden flex-col text-lightText dark:text-darkText'>
                     <div className='flex gap-6 overflow-hidden'>
 
@@ -41,8 +41,9 @@ export default function Usabout() {
                 
                 <motion.div 
 
-    className='gap-1 font-teko scrollbar-track-slate-500   text-lightText dark:text-darkText font-bold uppercase flex items-end justify-center overflow-hidden flex-wrap'
+    className='gap-1 font-teko scrollbar-track-slate-500   text-lightText dark:text-darkText font-bold uppercase flex items-end justify-center overflow-hidden flex-wrap '
 >
+    
     {desc.split(" ").map((word, idx) => (
         <motion.span 
             key={idx} 

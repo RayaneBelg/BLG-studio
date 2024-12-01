@@ -16,10 +16,13 @@ export default {
         darkText: '  #d1d8d8 ',
 
         lightBg : '  #d1d8d8 ',
-        DarkBg : '#334155',
+        DarkBg : 'linear-gradient(145deg, #37465b, #2e3b4d)',
 
 
-      }
+      },
+      backgroundImage: {
+        DarkBg: "linear-gradient(145deg, #37465b, #2e3b4d)", // Moved here
+      },
     },
   },
   darkMode : 'class',
