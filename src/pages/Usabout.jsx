@@ -74,7 +74,7 @@ export default function Usabout() {
 
            
 
-            <GridNeo/>
+            <GridProj/>
             
          
             
