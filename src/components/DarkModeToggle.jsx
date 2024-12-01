@@ -11,8 +11,7 @@ export default function DarkModeToggle() {
 
   return (
     <motion.button
-    whileHover={{ scale: 1.075 }} 
-    whileTap={{scale : 0.9}}
+   
     initial={{opacity : 0.1}}
     animate={{opacity : 1}}
     transition={{duration : 0.4 }}
