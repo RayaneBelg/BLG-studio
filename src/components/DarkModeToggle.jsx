@@ -15,9 +15,9 @@ export default function DarkModeToggle() {
     whileTap={{scale : 0.9}}
     initial={{opacity : 0.1}}
     animate={{opacity : 1}}
-    transition={{duration : 0.8 , delay : 2.5}}
+    transition={{duration : 0.4 }}
       onClick={() => setDarkMode(!darkMode)}
-      className=" absolute left-[50%] transform translate-x-[-50%] bottom-1 z-30"
+      className=" mt-1 absolute left-[50%] transform translate-x-[-50%] bottom-1 z-30 border rounded-full p-1 border-lightText dark:border-rose"
     >
       {darkMode ? <AnimatePresence> <MdSunny size={40} className='  text-rose  bg-lightText  rounded-full  shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888] ' /> </AnimatePresence> : 
       <IoMdMoon  size={40} className='text-lightText z-30  shadow-[5px_5px_10px_#717575,-5px_-5px_10px_#ffffff] rounded-full  bg-lightbg'/>
