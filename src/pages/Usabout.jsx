@@ -6,6 +6,7 @@ import Proj from '../components/Proj'
 import GridProj from '../components/GridProj'
 import DarkModeToggle from "../components/DarkModeToggle"
 import TopHead from "../components/TopHead"
+import GridNeo from '../components/GridNeo'
 
 export default function Usabout() {
     const title = "BLG STUDIO ®"
@@ -73,7 +74,7 @@ export default function Usabout() {
 
            
 
-            <GridProj/>
+            <GridNeo/>
             
          
             

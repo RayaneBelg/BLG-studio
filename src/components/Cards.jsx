@@ -30,7 +30,7 @@ export default function Cards({ infos }) {
       transition={{ delay: 1.5 + infos.id * 0.2 }}
       onClick={() => setSelected(infos)}
     
-      className={`${ infos.id % 3 === 0 ?   'col-span-2 ' : 'col-span-1'}  text-center shadow-md shadow-black p-2 flex flex-col bg-lightBg dark:bg-DarkBg text-lightText dark:text-darkText font-teko  `}
+      className={`${ infos.id  === 1 || infos.id  === 4 || infos.id  === 5 ?   'md:col-span-2 ' : 'col-span-1'}  text-center shadow-md shadow-black p-2 flex flex-col bg-lightBg dark:bg-DarkBg text-lightText dark:text-darkText font-teko  `}
     >
       {/* Card Content */}
       <div className="flex justify-center my-1">

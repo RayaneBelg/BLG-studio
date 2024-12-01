@@ -20,7 +20,7 @@ const Navbar = () => {
     <motion.div
     onClick={handleToggle}
 
-      className="z-40 fixed flex items-center justify-center text-lightText bg-lightBg  dark:bg-lightText dark:text-rose  h-[4vh] w-[10vh] left-[50%] transform translate-x-[-50%]   font-bold uppercase font-teko text-xl  top-1 dark:shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888] shadow-[5px_5px_10px_#717575,-5px_-5px_10px_#ffffff] "
+      className="z-40 fixed flex items-center justify-center text-lightText bg-lightBg  dark:bg-lightText dark:text-rose  h-[4vh] w-[10vh] left-[50%] transform translate-x-[-50%]   font-bold uppercase font-teko text-xl  top-0 border-lightText border-2 dark:border-rose border-t-0 "
     >
       <h1 className="">About</h1>
 

@@ -144,6 +144,29 @@ export const SLIDE = [
                       
                       },
 
+                      {
+                      
+                      
+                        id:6,
+  
+  
+                        img :BM, 
+  
+                        title : 'Batiste Million' ,
+  
+  
+                         desc  :'FASHION DESIGNER' ,
+  
+                         service : "E-commerce boutique",
+  
+                         stack : [SiShopify] ,
+  
+                          slide : [ phoemillion , bmtab , bmdesk],
+                          extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année  ! "
+                        
+                        
+                        },
+
                    
      // Blue
   // Mag4nta
