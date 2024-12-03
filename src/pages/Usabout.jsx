@@ -20,7 +20,7 @@ export default function Usabout() {
             {/* Header Section */}
             <div className='flex-col flex  justify-center    p-2 overflow-hidden'>
                 <div className='font-serif font-bold uppercase text-[7vw]    flex items-center  overflow-hidden flex-col text-lightText dark:text-darkText'>
-                    <div className='flex gap-6 overflow-hidden  p-2 '>
+                    <div className='flex items-center justify-centeroverflow-hidden mt-4 md:mt-7 dark:shadow-darkinset-custom rounded-full'>
 
                   
                  
@@ -29,7 +29,7 @@ export default function Usabout() {
        // Ensure animations are tied to the current slide
       src={logo}
      
-      className="mt-4 h-[10vh] md:h-auto object-contain "
+      className=" h-[10vh] md:h-auto object-contain "
       initial={{ opacity: 0,  }} // Slide-in animation
       animate={{ opacity: 1,  }}
       exit={{ opacity: 0,  }}
@@ -73,7 +73,7 @@ export default function Usabout() {
             <div className='overflow-hidden flex flex-col mb-1 '>
                 <motion.h1 initial={{ opacity: 0 , y : 200}}
             animate={{ opacity: 1,  y : 0}}
-            transition={{ duration :  1 , delay : 1}} className='uppercase font-teko font-bold md:text-5xl text-2xl text-lightText dark:text-darkText'>Projects</motion.h1>
+            transition={{ duration :  1 , delay : 1}} className='uppercase font-teko font-bold md:text-3xl text-xl text-lightText dark:text-darkText'>Work</motion.h1>
              <motion.div 
         initial={{scaleX : 0}}
         animate={{scaleX : 1}}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi"; // Icons for Hamburger and Close
+import Timeline from "./Timeline";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -62,7 +63,7 @@ const Navbar = () => {
           (<motion.div  initial={{opacity :0}}
           animate={{opacity : 1}}
           transition={{duration : 1}} > 
-            
+            <Timeline/>
           
           </motion.div>) : 
           
