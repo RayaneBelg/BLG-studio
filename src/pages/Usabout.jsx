@@ -20,7 +20,7 @@ export default function Usabout() {
             {/* Header Section */}
             <div className='flex-col flex  justify-center    p-2 overflow-hidden'>
                 <div className='font-serif font-bold uppercase text-[7vw]    flex items-center  overflow-hidden flex-col text-lightText dark:text-darkText'>
-                    <div className='flex items-center justify-centeroverflow-hidden mt-4 md:mt-7 dark:shadow-darkinset-custom rounded-full'>
+                    <div className='flex items-center justify-centeroverflow-hidden mt-4 mb-2 md:mt-7 dark:shadow-darkinset-custom rounded-full'>
 
                   
                  
