@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi"; // Icons for Hamburger and Close
 import Timeline from "./Timeline";
+import Services from "./Services";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,7 +36,7 @@ const Navbar = () => {
             <div onClick={(e)=> e.stopPropagation(e)} className="bg-lightBg dark:bg-lightText  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[55%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700 border-lightText dark:border-rose border p-4 gap-4">
 
 
-            <div className="flex gap-4 mt-4 justify-between ">
+            <div className="flex gap-4  justify-center w-full">
                 {/* Raised Button */}
                 <motion.button
                   onClick={handleInfoToggle}
@@ -70,6 +71,7 @@ const Navbar = () => {
           (<motion.div initial={{opacity :0}}
           animate={{opacity : 1}}
           transition={{duration : 1}} > 
+          <Services/>
           
           </motion.div>)
 

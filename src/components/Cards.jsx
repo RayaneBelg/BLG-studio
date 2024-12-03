@@ -61,7 +61,7 @@ export default function Cards({ infos }) {
             >
             
               {/* Slider Section */}
-              <div className="flex md:flex-row flex-col justify-between  md:items-center  w-[95%] md:h-[90%]  ">
+              <div className="flex md:flex-row flex-col justify-between  md:items-center  w-[95%] md:h-[100%]  ">
                 {/* Slider */}
               {/* Slider Section */}
 <div className="flex flex-col justify-center items-center md:w-[50%] h-[min-content] relative  md:h-[100%] overflow-x-hidden">

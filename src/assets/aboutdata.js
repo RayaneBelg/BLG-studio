@@ -26,3 +26,27 @@ export const ABOUTDATA = [
         tasks : ["Competitive Analysis" , "Measurement optimisation" , "Marketing Automation" , ]
     }
 ]
+
+export const SERVICES = [
+ {   id : 1 ,
+    name : "WEBSITE CREATION" ,
+    desc : "stunning creative websites, e-commerce "
+
+
+
+
+
+},
+
+{   id : 2 ,
+    name : "Digital Marketing" ,
+    desc : "stunning creative websites, e-commerce "
+
+
+
+
+
+},
+
+
+]
