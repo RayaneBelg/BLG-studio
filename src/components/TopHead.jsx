@@ -35,25 +35,25 @@ const Navbar = () => {
             <div onClick={(e)=> e.stopPropagation(e)} className="bg-lightBg dark:bg-lightText  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[55%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700 border-lightText dark:border-rose border p-4 gap-4">
 
 
-            <div className="flex gap-4 mt-4 ">
+            <div className="flex gap-4 mt-4 justify-between ">
                 {/* Raised Button */}
                 <motion.button
                   onClick={handleInfoToggle}
                   
-                  className="px-6 py-3  text-lightBg shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888]"
+                  className="border-2 border-rose p-2 text-xl uppercase text-rose font-teko font-bold"
                 
                 >
-                  [BLG Studio]
+                  BLG Studio
                 </motion.button>
 
                 {/* Inset Button */}
                 <motion.button
                   onClick={handleInfoToggle}
-                
-                  className="px-6 py-3  shadow-[inset_5px_5px_10px_#141a22,_inset_-5px_-5px_10px_#526888]"
+                  
+                  className="border-2 border-rose p-2 text-xl uppercase text-rose font-teko font-bold"
                 
                 >
-                  [About Me]
+                  about me
                 </motion.button>
               </div>
               

@@ -1,7 +1,7 @@
 export const ABOUTDATA = [
     {
         id : 1 ,
-        position : "Product Growth Manager - Digital project Manager",
+        position : "Product Growth Manager",
         company : "XPO Logistics",
         date : "sept.2021 - jan. 2023",
         
