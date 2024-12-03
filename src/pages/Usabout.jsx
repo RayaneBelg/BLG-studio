@@ -11,7 +11,7 @@ import logo from "../../public/logoblg.png"
 
 export default function Usabout() {
     const title = "BLG STUDIO ®"
-    const desc = "I'm Rayane , a freelance developer I have been creating web experiences for small to medium business for the past 3 years to help them thrive online"
+    const desc = "I'm Rayane , a freelance developer,  I create web experiences to help businesses succeed online "
   
 
     return (
