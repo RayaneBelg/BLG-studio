@@ -39,7 +39,7 @@ const Navbar = () => {
                 <motion.button
                   onClick={handleInfoToggle}
                   
-                  className="px-6 py-3 rounded-full text-lightBg shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888]"
+                  className="px-6 py-3  text-lightBg shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888]"
                 
                 >
                   [BLG Studio]
@@ -56,22 +56,20 @@ const Navbar = () => {
                 </motion.button>
               </div>
               
-              <p className="font-teko text-lightText dark:text-darkText text-xl px-6 py-3  shadow-[inset_5px_5px_10px_#141a22,_inset_-5px_-5px_10px_#526888] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto natus quo tempore esse! Sunt earum dignissimos minima accusamus fugit et, temporibus explicabo magni aut enim quasi commodi! Aliquam, saepe. </p>
-
-              <p className="font-teko text-lightText dark:text-darkText text-xl px-6 py-3 shadow-[5px_5px_10px_#1c232e,-5px_-5px_10px_#4a5f7c] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto natus quo tempore esse! . </p>
+            
             <AnimatePresence>
               { infoToggle ? 
           (<motion.div  initial={{opacity :0}}
           animate={{opacity : 1}}
           transition={{duration : 1}} > 
-            BLG Services
+            
           
           </motion.div>) : 
           
           (<motion.div initial={{opacity :0}}
           animate={{opacity : 1}}
           transition={{duration : 1}} > 
-          More About me 
+          
           </motion.div>)
 
           }

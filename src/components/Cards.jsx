@@ -56,7 +56,7 @@ export default function Cards({ infos }) {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
-              className="bg-lightBg dark:bg-DarkBg  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[65%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700 dark:border-rose border border-lightText "
+              className="bg-lightBg dark:bg-DarkBg  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[65%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700 dark:border-rose border border-lightText  "
               onClick={(e) => e.stopPropagation()} // Prevent click events from bubbling to close modal
             >
             
@@ -73,7 +73,7 @@ export default function Cards({ infos }) {
     className="absolute left-2 top-1/2 transform -translate-y-1/2 dark:text-rose text-lightText cursor-pointer"
     onClick={handlePrev}
   >
-    <BsChevronLeft className="dark:shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888] shadow-[5px_5px_10px_#717575,-5px_-5px_10px_#ffffff] rounded-full p-1 " size={40} />
+    <BsChevronLeft className="dark:shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888] shadow-[5px_5px_10px_#717575,-5px_-5px_10px_#ffffff] rounded-full p-1 " size={30} />
   </motion.div>
 
   {/* Slide Image */}
@@ -104,7 +104,7 @@ export default function Cards({ infos }) {
     className="absolute right-2 top-1/2 transform -translate-y-1/2 dark:text-rose text-lightText cursor-pointer"
     onClick={handleNext}
   >
-    <BsChevronRight size={40}  className="dark:shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888] shadow-[5px_5px_10px_#717575,-5px_-5px_10px_#ffffff] rounded-full p-1  " />
+    <BsChevronRight size={30}  className="dark:shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888] shadow-[5px_5px_10px_#717575,-5px_-5px_10px_#ffffff] rounded-full p-1  " />
   </motion.div>
 </div>
 
@@ -112,7 +112,7 @@ export default function Cards({ infos }) {
                 {/* Info Section */}
                 <motion.div  initial={{opacity : 0}}
               animate={{opacity : 1}}
-              transition={{duration : .8 , delay : .8}} className="flex flex-col justify-center gap-3 md:gap-5 md:w-[50%] items-start  md:h-[100%]">
+              transition={{duration : .8 , delay : .8}} className="flex flex-col justify-center gap-3 md:gap-5 md:w-[50%] items-start p-4 md:h-[100%] ">
                   <motion.h1 
            
               className="md:text-3xl text-3xl uppercase font-extrabold underline-offset-4 underline mt-4">{infos.title}</motion.h1>
