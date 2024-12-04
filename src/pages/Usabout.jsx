@@ -7,11 +7,14 @@ import GridProj from '../components/GridProj'
 import DarkModeToggle from "../components/DarkModeToggle"
 import TopHead from "../components/TopHead"
 import GridNeo from '../components/GridNeo'
-import logo from "../../public/logoblg.png"
-
+import logorb from "../../public/logorb.png"
+import logobright from "../../public/logorbbright.png"
+import { useContext } from 'react'
+import { DarkModeContext } from '../components/DarkModeProvider'
 export default function Usabout() {
     const title = "BLG STUDIO ®"
     const desc = "I'm Rayane , a freelance developer,  I create web experiences to help businesses succeed online "
+    const { darkMode } = useContext(DarkModeContext);
   
 
     return (
@@ -20,16 +23,16 @@ export default function Usabout() {
             {/* Header Section */}
             <div className='flex-col flex  justify-center    p-2 overflow-hidden'>
                 <div className='font-serif font-bold uppercase text-[7vw]    flex items-center  overflow-hidden flex-col text-lightText dark:text-darkText'>
-                    <div className='flex items-center justify-centeroverflow-hidden mt-4 mb-2 md:mt-7 dark:shadow-darkinset-custom rounded-full'>
+                    <div className='flex items-center justify-centeroverflow-hidden mt-4 mb-2 md:mt-7 '>
 
                   
                  
 
         <motion.img
        // Ensure animations are tied to the current slide
-      src={logo}
+       src={ darkMode ?  logorb : logobright}
      
-      className=" h-[10vh] md:h-auto object-contain "
+      className=" h-[10vh] md:h-[15h] object-contain "
       initial={{ opacity: 0,  }} // Slide-in animation
       animate={{ opacity: 1,  }}
       exit={{ opacity: 0,  }}

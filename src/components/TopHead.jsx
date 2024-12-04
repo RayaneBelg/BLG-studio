@@ -41,7 +41,7 @@ const Navbar = () => {
                 <motion.button
                   onClick={handleInfoToggle}
                   
-                  className="border-2 border-rose p-2 text-xl uppercase text-rose font-teko font-bold"
+                  className="border-2 border-lightText text-lightText  dark:border-rose p-2 text-xl uppercase dark:text-rose font-teko font-bold"
                 
                 >
                   BLG Studio
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <motion.button
                   onClick={handleInfoToggle}
                   
-                  className="border-2 border-rose p-2 text-xl uppercase text-rose font-teko font-bold"
+                  className="border-2 border-lightText text-lightText  dark:border-rose p-2 text-xl uppercase dark:text-rose font-teko font-bold"
                 
                 >
                   about me

@@ -6,6 +6,7 @@ import { MdSunny } from "react-icons/md";
 import { IoMdMoon } from "react-icons/io";
 import { AnimatePresence, motion } from 'framer-motion';
 
+
 export default function DarkModeToggle() {
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
 
