@@ -17,7 +17,7 @@ function App() {
   return (
    
 
-   <div className="h-dvh overflow-hidden p-2  dark:bg-DarkBg bg-lightBg  ">
+   <div className="h-dvh overflow-hidden p-2  dark:bg-DarkBg bg-lightBg transition-all duration-700 ">
 
    
 
