@@ -27,6 +27,7 @@ import bmtab from "../../public/bmtab.png"
 import phoemillion from "../../public/phoemillion.png"
 import { FaWordpress } from "react-icons/fa";
 import { SiShopify } from "react-icons/si";
+import logorbb from "../../public/logorbb.png"
 
 
 
@@ -161,7 +162,7 @@ export const SLIDE = [
   
                          stack : [SiShopify] ,
   
-                          slide : [ phoemillion , bmtab , bmdesk],
+                          slide : [ logorbb, logorbb,logorbb],
                           extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année  ! "
                         
                         
