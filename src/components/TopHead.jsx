@@ -3,17 +3,26 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi"; // Icons for Hamburger and Close
 import Timeline from "./Timeline";
 import Services from "./Services";
+import logorbb from "../../public/logorbb.png"
+import logobrightt from "../../public/logorbbrightt.png"
+import { useContext } from 'react'
+import { DarkModeContext } from '../components/DarkModeProvider'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [infoToggle , setInfoToggle] = useState(false);
+  const [infoToggle , setInfoToggle] = useState(true);
+  const { darkMode } = useContext(DarkModeContext);
 
   const navLinks = ["Home", "About", "Services", "Contact"]; // Replace with your links
   const handleToggle = ()=>{
     setMenuOpen(!menuOpen)
   }
-  const handleInfoToggle = () =>{
-    setInfoToggle(!infoToggle)
+  const SetInfoTrue = () =>{
+    setInfoToggle(true)
+  }
+
+  const SetInfoFalse = () =>{
+    setInfoToggle(false)
   }
 
   return (
@@ -22,7 +31,7 @@ const Navbar = () => {
     <motion.div
     onClick={handleToggle}
 
-      className="z-40 fixed flex items-center justify-center text-lightText bg-lightBg  dark:bg-lightText dark:text-rose  h-[4vh] w-[10vh] left-[50%] transform translate-x-[-50%]   font-bold uppercase font-teko text-xl  top-0 border-lightText border-2 dark:border-rose border-t-0 "
+      className="z-40 fixed flex items-center justify-center text-lightText bg-lightBg  dark:bg-lightText dark:text-rose  h-[4vh] w-[10vh] left-[50%] transform translate-x-[-50%]   font-bold uppercase font-teko text-xl  top-0 border-lightText border-2 dark:border-rose border-t-0 dark:hover:border-4 dark:hover:border-t-0 dark:active:border dark:active:border-t-0 transition-all 1s "
     >
       <h1 className="">About</h1>
 
@@ -39,19 +48,38 @@ const Navbar = () => {
             <div className="flex gap-4  justify-center w-full">
                 {/* Raised Button */}
                 <motion.button
-                  onClick={handleInfoToggle}
+                  onClick={SetInfoTrue}
                   
-                  className="border-2 border-lightText text-lightText  dark:border-rose p-2 text-xl uppercase dark:text-rose font-teko font-bold"
+                  className={`${
+                    infoToggle ===true ? 'border-4' : 'border-2 opacity-50'
+                  } border-lightText text-lightText dark:border-rose p-2 text-xl uppercase dark:text-rose font-teko font-bold transition all duration-700`}
                 
                 >
-                  BLG Studio
+                          <motion.img
+       // Ensure animations are tied to the current slide
+       src={ darkMode ?  logorbb : logobrightt}
+     
+      className=" h-[10vh] md:h-[6vh] object-contain "
+      initial={{ opacity: 0,  }} // Slide-in animation
+      animate={{ opacity: 1,  }}
+      exit={{ opacity: 0,  }}
+      transition={{
+        type: "spring",   // Use spring animation
+        stiffness: 60,   // Controls the "bounciness" of the spring
+        damping: 10,      // Reduces the oscillation
+        mass: 0.5,        // Affects how heavy the spring feels
+        duration: 1.5,    // Ensures the animation finishes in 0.9 seconds
+      }}
+    />
                 </motion.button>
 
                 {/* Inset Button */}
                 <motion.button
-                  onClick={handleInfoToggle}
+                  onClick={SetInfoFalse}
                   
-                  className="border-2 border-lightText text-lightText  dark:border-rose p-2 text-xl uppercase dark:text-rose font-teko font-bold"
+                  className={`${
+                    infoToggle === false ? 'border-4' : 'border-2 opacity-50'
+                  } border-lightText text-lightText dark:border-rose p-2 text-xl uppercase dark:text-rose font-teko font-bold transition all duration-700`}
                 
                 >
                   about me
@@ -64,14 +92,15 @@ const Navbar = () => {
           (<motion.div  initial={{opacity :0}}
           animate={{opacity : 1}}
           transition={{duration : 1}} > 
-            <Timeline/>
+            <Services/>
           
           </motion.div>) : 
           
           (<motion.div initial={{opacity :0}}
           animate={{opacity : 1}}
           transition={{duration : 1}} > 
-          <Services/>
+          
+          <Timeline/>
           
           </motion.div>)
 

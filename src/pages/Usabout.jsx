@@ -7,8 +7,8 @@ import GridProj from '../components/GridProj'
 import DarkModeToggle from "../components/DarkModeToggle"
 import TopHead from "../components/TopHead"
 import GridNeo from '../components/GridNeo'
-import logorb from "../../public/logorb.png"
-import logobright from "../../public/logorbbright.png"
+import logorbb from "../../public/logorbb.png"
+import logobrightt from "../../public/logorbbrightt.png"
 import { useContext } from 'react'
 import { DarkModeContext } from '../components/DarkModeProvider'
 export default function Usabout() {
@@ -30,7 +30,7 @@ export default function Usabout() {
 
         <motion.img
        // Ensure animations are tied to the current slide
-       src={ darkMode ?  logorb : logobright}
+       src={ darkMode ?  logorbb : logobrightt}
      
       className=" h-[10vh] md:h-[15h] object-contain "
       initial={{ opacity: 0,  }} // Slide-in animation
@@ -59,7 +59,7 @@ export default function Usabout() {
 >
     
     {desc.split(" ").map((word, idx) => (
-        <motion.span 
+        <motion.span className={idx === 4 || idx === 5 ? "text-rose outline-2 ": ""}
             key={idx} 
             initial={{ opacity: 0.1 , }}
             animate={{ opacity: 1, }}
