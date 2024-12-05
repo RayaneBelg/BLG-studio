@@ -27,7 +27,11 @@ import bmtab from "../../public/bmtab.png"
 import phoemillion from "../../public/phoemillion.png"
 import { FaWordpress } from "react-icons/fa";
 import { SiShopify } from "react-icons/si";
-import logorbb from "../../public/logorbb.png"
+import logorbb from "../../public/logorbb.png";
+import cookiephoning from "../../public/cookiephoning.png";
+
+import cookiegood from "../../public/cookiegood.png";
+
 
 
 
@@ -113,7 +117,7 @@ export const SLIDE = [
                         
                          
 
-                        slide : [cookiephone, tabcookie, cookietop],
+                        slide : [cookiegood, cookiephoning],
 
 
                         extend : "l’univers savoureux d’O’Cookies, où la simplicité rencontre la qualité. Des cookies uniques  confectionnés avec soin, mettant en avant des ingrédients de première qualité" } ,
