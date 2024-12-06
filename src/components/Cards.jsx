@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { SiWoocommerce } from "react-icons/si";
+import { HiLink } from "react-icons/hi";
 
 
 export default function Cards({ infos }) {
@@ -64,17 +65,9 @@ export default function Cards({ infos }) {
               <div className="flex md:flex-row flex-col justify-between  md:items-center  w-[95%] md:h-[100%]  ">
                 {/* Slider */}
               {/* Slider Section */}
-<div className="flex flex-col justify-center items-center md:w-[50%] h-[min-content] relative  md:h-[100%] overflow-x-hidden">
+<div className="flex flex-col justify-center items-center md:w-[50%] h-[min-content] relative  md:h-[100%] overflow-x-hidden border-2">
   {/* Left Arrow */}
-  <motion.div
-    whileHover={{ scale: 1.075 }} 
-    whileTap={{scale : 0.9}}
-    transition={{ type: "spring", stiffness: 300 }}
-    className="absolute left-2 top-1/2 transform -translate-y-1/2 dark:text-rose text-lightText cursor-pointer"
-    onClick={handlePrev}
-  >
-    <BsChevronLeft className="dark:shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888] shadow-[5px_5px_10px_#717575,-5px_-5px_10px_#ffffff] rounded-full p-1 " size={30} />
-  </motion.div>
+ 
 
   {/* Slide Image */}
   {infos.slide && infos.slide.length > 0 && (
@@ -82,7 +75,7 @@ export default function Cards({ infos }) {
       key={imageIndex} // Ensure animations are tied to the current slide
       src={infos.slide[imageIndex]}
       alt={`Slide ${imageIndex}`}
-      className="h-[40vh]  object-contain "
+      className="h-[40vh]  object-contain border-2 "
       initial={{ opacity: 0,  }} // Slide-in animation
       animate={{ opacity: 1,  }}
       exit={{ opacity: 0,  }}
@@ -98,13 +91,28 @@ export default function Cards({ infos }) {
 
   {/* Right Arrow */}
   <motion.div
-    whileHover={{ scale: 1.075 }} 
-    whileTap={{scale : 0.9}}
-    transition={{ type: "spring", stiffness: 100 }}
-    className="absolute right-2 top-1/2 transform -translate-y-1/2 dark:text-rose text-lightText cursor-pointer"
+    
+    
+    className=" flex dark:text-rose text-lightText cursor-pointer  w-[50%] justify-between"
+    
+  >
+     <motion.button
+    
+    
+    className=" dark:text-rose text-lightText cursor-pointer border-4 border-rose p-1"
+    onClick={handlePrev}
+  >
+    <BsChevronLeft className="   " size={40} />
+  </motion.button>
+  <motion.div
+    
+    
+     className=" dark:text-rose text-lightText cursor-pointer border-4 border-rose p-1"
     onClick={handleNext}
   >
-    <BsChevronRight size={30}  className="dark:shadow-[5px_5px_10px_#141a22,_-5px_-5px_10px_#526888] shadow-[5px_5px_10px_#717575,-5px_-5px_10px_#ffffff] rounded-full p-1  " />
+    <BsChevronRight size={40}  className=" " />
+  </motion.div>
+    
   </motion.div>
 </div>
 
@@ -112,21 +120,32 @@ export default function Cards({ infos }) {
                 {/* Info Section */}
                 <motion.div  initial={{opacity : 0}}
               animate={{opacity : 1}}
-              transition={{duration : .8 , delay : .8}} className="flex flex-col justify-center gap-3 md:gap-5 md:w-[50%] items-start p-4 md:h-[100%] ">
+              transition={{duration : .8 , delay : .8}} className="flex flex-col justify-center gap-3 md:gap-5 md:w-[50%] items-start p-2 md:h-[100%]  border-2">
                   <motion.h1 
            
-              className="md:text-3xl text-3xl uppercase font-extrabold underline-offset-4 underline mt-4">{infos.title}</motion.h1>
+              className="md:text-2xl text-2xl uppercase font-extrabold underline-offset-4 underline mt-4 flex gap-2"> {infos.id}. {infos.title} <HiLink color="#8dbe22" size={30}/> </motion.h1>
                  
-                <h1 className="text-2xl uppercase font-bold ">{infos.desc}</h1>
-                <p className=" text-lg text-justify font-bold">
+                <h1 className="text-xl uppercase font-bold dark:text-rose">{infos.desc}</h1>
+                <p className=" text-justify text-lg">
                    {infos.extend}
                   </p>
 
-  <p className="flex gap-2">
+  <p className="flex gap-2 items-center">
+    <span className="text-xl font-bold uppercase dark:text-rose"> stack :</span>
   {infos.stack && infos.stack.map((Icon, index) => (
     <Icon key={index} size={45} />
   ))}
 </p>   
+<p className="flex gap-2 items-center">
+    <span className="text-xl font-bold uppercase dark:text-rose"> Services:</span>
+{infos.service}
+</p> 
+<p className="flex gap-2 items-center">
+    <span className="text-xl font-bold uppercase dark:text-rose"> Key Figures :</span>
+  {infos.stack && infos.stack.map((Icon, index) => (
+    <Icon key={index} size={45} />
+  ))}
+</p> 
                  
                 
                 </motion.div>
