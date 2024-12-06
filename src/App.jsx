@@ -39,7 +39,7 @@ function App() {
           y: cursorPosition.y,
         }}
         animate={{
-          scale: [1, 1.2, 1], // Subtle pulsing effect
+          scale: [1, 1.6, 1], // Subtle pulsing effect
         }}
         transition={{
           duration: 3.5,

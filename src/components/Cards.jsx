@@ -59,15 +59,10 @@ const {darkMode} =useContext(DarkModeContext);
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
-              className="bg-lightBg dark:bg-DarkBg  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[65%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700 dark:border-rose border border-lightText relative "
+              className="bg-lightBg dark:bg-DarkBg  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[65%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700 dark:border-rose border border-lightText  "
               onClick={(e) => e.stopPropagation()} // Prevent click events from bubbling to close modal
             >
-                 <button
-                onClick={closeModal}
-                className=" absolute right-2 text-xl  md:text-3xl font-extrabold  text-rose p-2 top-2 "
-              >
-                <ImCross/>
-              </button>
+               
             
               {/* Slider Section */}
               <div className="flex md:flex-row flex-col justify-between  md:items-center  w-[95%] md:h-[100%]  ">
@@ -166,10 +161,18 @@ const {darkMode} =useContext(DarkModeContext);
                  
                 
                 </motion.div>
+
               </div>
 
+              <button
+                onClick={closeModal}
+                className=" absolute right-2 text-xl  md:text-3xl font-extrabold  text-rose p-2 top-2 "
+              >
+                <ImCross/>
+              </button>
            
             </motion.div>
+         
           </motion.div>
         )}
       </AnimatePresence>
