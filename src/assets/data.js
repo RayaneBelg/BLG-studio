@@ -8,6 +8,7 @@ import BM from "../../public/BM.png"
 import climaxlaptop from "../../public/climaxlaptop.png"
 import climaxtab from "../../public/climaxtab.png"
 import cookietop from "../../public/cookietop.png"
+import cookietab from "../../public/cookietab.png"
 import cookiephone from "../../public/cookiephone.png"
 import phonecook from "../../public/phonecook.png"
 import gmtphone from "../../public/gmtfinalphone.png"
@@ -98,7 +99,7 @@ export const SLIDE = [
                           
                           phone : phonecook , 
                           
-                          slide : [cookiephone, tabcookie, cookietop],
+                          slide : [cookiephone, cookietab, cookietop],
                           extend : "l’univers savoureux d’O’Cookies, où la simplicité rencontre la qualité. Des cookies uniques  confectionnés avec soin, mettant en avant des ingrédients de première qualité"
                         
                         },
