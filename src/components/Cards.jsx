@@ -3,14 +3,16 @@ import { AnimatePresence, motion } from "framer-motion";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { SiWoocommerce } from "react-icons/si";
 import { HiLink } from "react-icons/hi";
-
+import { ImCross } from "react-icons/im";
+import { DarkModeContext } from "./DarkModeProvider";
+import { useContext } from "react";
 
 export default function Cards({ infos }) {
   const [selected, setSelected] = useState(null);
   const [imageIndex, setImageIndex] = useState(0); // Current index for the slider
 
   const closeModal = () => {setSelected(null)};
-
+const {darkMode} =useContext(DarkModeContext);
   // Handle slider navigation
   const handlePrev = () => {
     if (infos.slide && infos.slide.length) {
@@ -35,7 +37,7 @@ export default function Cards({ infos }) {
     >
       {/* Card Content */}
       <div className="flex justify-center my-1">
-        <img className="h-[10vh] " src={infos.img} alt={infos.title} />
+        <img className="h-[10vh] " src={   darkMode ? infos.imgdark : infos.img} alt={infos.title} />
       </div>
    
       <div className="font-bold uppercase md:text-xl text-[2ch]">
@@ -57,15 +59,21 @@ export default function Cards({ infos }) {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
-              className="bg-lightBg dark:bg-DarkBg  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[65%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700 dark:border-rose border border-lightText  "
+              className="bg-lightBg dark:bg-DarkBg  overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-[65%] flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700 dark:border-rose border border-lightText relative "
               onClick={(e) => e.stopPropagation()} // Prevent click events from bubbling to close modal
             >
+                 <button
+                onClick={closeModal}
+                className=" absolute right-2 text-xl  md:text-3xl font-extrabold  text-rose p-2 top-2 "
+              >
+                <ImCross/>
+              </button>
             
               {/* Slider Section */}
               <div className="flex md:flex-row flex-col justify-between  md:items-center  w-[95%] md:h-[100%]  ">
                 {/* Slider */}
               {/* Slider Section */}
-<div className="flex flex-col justify-center items-center md:w-[50%] h-[min-content] relative  md:h-[100%] overflow-x-hidden border-2">
+<div className="flex flex-col justify-center items-center md:w-[50%] h-[min-content] relative   overflow-x-hidden ">
   {/* Left Arrow */}
  
 
@@ -75,7 +83,7 @@ export default function Cards({ infos }) {
       key={imageIndex} // Ensure animations are tied to the current slide
       src={infos.slide[imageIndex]}
       alt={`Slide ${imageIndex}`}
-      className="h-[40vh]  object-contain border-2 "
+      className="h-[45vh]  object-contain "
       initial={{ opacity: 0,  }} // Slide-in animation
       animate={{ opacity: 1,  }}
       exit={{ opacity: 0,  }}
@@ -102,7 +110,7 @@ export default function Cards({ infos }) {
     className=" dark:text-rose text-lightText cursor-pointer border-4 border-rose p-1"
     onClick={handlePrev}
   >
-    <BsChevronLeft className="   " size={40} />
+    <BsChevronLeft className="text-2xl md:text-3xl" />
   </motion.button>
   <motion.div
     
@@ -110,7 +118,7 @@ export default function Cards({ infos }) {
      className=" dark:text-rose text-lightText cursor-pointer border-4 border-rose p-1"
     onClick={handleNext}
   >
-    <BsChevronRight size={40}  className=" " />
+    <BsChevronRight  className=" text-2xl md:text-3xl" />
   </motion.div>
     
   </motion.div>
@@ -120,28 +128,37 @@ export default function Cards({ infos }) {
                 {/* Info Section */}
                 <motion.div  initial={{opacity : 0}}
               animate={{opacity : 1}}
-              transition={{duration : .8 , delay : .8}} className="flex flex-col justify-center gap-3 md:gap-5 md:w-[50%] items-start p-2 md:h-[100%]  border-2">
+              transition={{duration : .8 , delay : .8}} className="flex flex-col justify-around gap-3 md:gap-5 md:w-[50%] items-start p-2    md:h-[50vh]">
                   <motion.h1 
            
               className="md:text-2xl text-2xl uppercase font-extrabold underline-offset-4 underline mt-4 flex gap-2"> {infos.id}. {infos.title} <HiLink color="#8dbe22" size={30}/> </motion.h1>
                  
                 <h1 className="text-xl uppercase font-bold dark:text-rose">{infos.desc}</h1>
+
+
+                <div className="flex flex-col items-start">
+                <span className="text-lg font-bold uppercase dark:text-rose"> About :</span>
                 <p className=" text-justify text-lg">
                    {infos.extend}
                   </p>
 
-  <p className="flex gap-2 items-center">
-    <span className="text-xl font-bold uppercase dark:text-rose"> stack :</span>
+                </div>
+               
+
+  <p className="flex flex-col items-start">
+    <span className="text-lg font-bold uppercase dark:text-rose"> stack :</span>
+    <p className=" text-justify text-lg flex gap-2">
   {infos.stack && infos.stack.map((Icon, index) => (
     <Icon key={index} size={45} />
   ))}
+  </p>
 </p>   
-<p className="flex gap-2 items-center">
-    <span className="text-xl font-bold uppercase dark:text-rose"> Services:</span>
+<p className="flex gap-2 items-center text-lg">
+    <span className="text-lg font-bold uppercase dark:text-rose"> Services:</span>
 {infos.service}
 </p> 
 <p className="flex gap-2 items-center">
-    <span className="text-xl font-bold uppercase dark:text-rose"> Key Figures :</span>
+    <span className="text-lg font-bold uppercase dark:text-rose"> Key Figures :</span>
   {infos.stack && infos.stack.map((Icon, index) => (
     <Icon key={index} size={45} />
   ))}
@@ -151,12 +168,7 @@ export default function Cards({ infos }) {
                 </motion.div>
               </div>
 
-              <button
-                onClick={closeModal}
-                className=" absolute right-2  text-3xl font-extrabold  text-rose p-2 top-2 "
-              >
-                X
-              </button>
+           
             </motion.div>
           </motion.div>
         )}

@@ -30,6 +30,9 @@ import { FaWordpress } from "react-icons/fa";
 import { SiShopify } from "react-icons/si";
 import logorbb from "../../public/logorbb.png";
 import cookiephoning from "../../public/cookiephoning.png";
+import climwhite from "../../public/climwhite.png"
+import cookwhite from "../../public/cookwhite.png"
+import jibwhite from "../../public/jibwhite.png"
 
 import cookiegood from "../../public/cookiegood.png";
 
@@ -44,6 +47,7 @@ export const SLIDE = [
       
                         id:1 ,
                         img : gmt ,
+                        imgdark :gmt ,
                          title : 'GRAND méchant' , 
                          desc : 'fashion designer ' , 
                          service : "E-commerce boutique", 
@@ -62,6 +66,7 @@ export const SLIDE = [
                           id:2,
 
                           img :climax ,
+                          imgdark :climwhite,
 
                            title : 'CLIMAX FIGHT A.' ,
 
@@ -85,6 +90,7 @@ export const SLIDE = [
                          {id:3 ,
                           
                           img :ocookies ,
+                          imgdark :cookwhite ,
                           
                           title : 'OCookies' , 
                           
@@ -107,6 +113,7 @@ export const SLIDE = [
                        {id:4 ,
                         
                         img :jibb , 
+                        imgdark :jibwhite ,
                         
                         title : 'JM coaching' , 
                         
@@ -133,7 +140,8 @@ export const SLIDE = [
                       id:5,
 
 
-                      img :BM, 
+                      img :BM,
+                      imgdark :BM ,
 
                       title : 'Batiste Million' ,
 
@@ -157,6 +165,7 @@ export const SLIDE = [
   
   
                         img :BM, 
+                        imgdark :climwhite ,
   
                         title : 'Batiste Million' ,
   
