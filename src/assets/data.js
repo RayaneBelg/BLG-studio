@@ -68,6 +68,7 @@ export const SLIDE = [
 
                           img :climax ,
                           imgdark :climwhite,
+                          url:"https://www.climaxfightacademy.fr/",
 
                            title : 'CLIMAX FIGHT A.' ,
 
