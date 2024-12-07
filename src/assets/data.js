@@ -2,6 +2,7 @@ import climax from "../../public/climax.png"
 import box from "../../public/box.png"
 import ocookies from "../../public/ocookies.png"
 import isola from "../../public/isola.png"
+import isolap from "../../public/isolap.png"
 import gmt from "../../public/gmt.png"
 import jibb from "../../public/jibb.png"
 import BM from "../../public/BM.png"
@@ -52,7 +53,7 @@ export const SLIDE = [
                          desc : 'fashion designer ' , 
                          service : "E-commerce boutique", 
                          stack : [FaWordpress , SiWoocommerce] ,
-                           slide : [ gmtphone , tablet , gmtlaptop] , 
+                           slide : [ gmtlaptop , gmtphone , tablet , ] , 
                            extend : "Créateur de mode français, un style hautement illustré dans un univers dark cartoon "
                           
                           
@@ -80,7 +81,7 @@ export const SLIDE = [
 
                              phone : phoneclimax , 
 
-                             slide : [ phoneclimax , climaxtab, climtop],
+                             slide : [ climtop,phoneclimax , climaxtab, ],
                              extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année  ! "
                             
                             },
@@ -90,7 +91,7 @@ export const SLIDE = [
                          {id:3 ,
                           
                           img :ocookies ,
-                          imgdark :cookwhite ,
+                          imgdark :ocookies,
                           
                           title : 'OCookies' , 
                           
@@ -105,7 +106,7 @@ export const SLIDE = [
                           
                           phone : phonecook , 
                           
-                          slide : [cookiephone, cookietab, cookietop],
+                          slide : [ cookietop, cookiephone, cookietab, ],
                           extend : "l’univers savoureux d’O’Cookies, où la simplicité rencontre la qualité. Des cookies uniques  confectionnés avec soin, mettant en avant des ingrédients de première qualité"
                         
                         },
@@ -152,7 +153,7 @@ export const SLIDE = [
 
                        stack : [SiShopify] ,
 
-                        slide : [ phoemillion , bmtab , bmdesk],
+                        slide : [ bmdesk, phoemillion , bmtab , ],
                         extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année  ! "
                       
                       
@@ -164,19 +165,19 @@ export const SLIDE = [
                         id:6,
   
   
-                        img :BM, 
-                        imgdark :climwhite ,
+                        img :isola, 
+                        imgdark :isola ,
   
-                        title : 'Batiste Million' ,
+                        title : 'Isola Rhone Alpes' ,
   
   
-                         desc  :'FASHION DESIGNER' ,
+                         desc  :'Energies' ,
   
                          service : "E-commerce boutique",
   
                          stack : [SiShopify] ,
   
-                          slide : [ logorbb, logorbb,logorbb],
+                          slide : [ isolap, logorbb,logorbb],
                           extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année  ! "
                         
                         
