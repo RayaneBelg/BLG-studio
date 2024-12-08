@@ -2,6 +2,8 @@ import climax from "../../public/climax.png"
 import box from "../../public/box.png"
 import ocookies from "../../public/ocookies.png"
 import isola from "../../public/isola.png"
+import isophone from "../../public/isophone.png"
+import isotab from "../../public/isotab.png"
 import isolap from "../../public/isolap.png"
 import gmt from "../../public/gmt.png"
 import jibb from "../../public/jibb.png"
@@ -112,25 +114,7 @@ export const SLIDE = [
                         
                         },
 
-                       {id:4 ,
-                        
-                        img :jibb , 
-                        imgdark :jibwhite ,
-                        
-                        title : 'JM coaching' , 
-                        
-                        desc  :'Coach sportif' , 
-                        
-                        service : "E-commerce boutique", 
-
-                        stack : [ FaWordpress, SiWoocommerce ] , 
-                        
-                         
-
-                        slide : [cookiegood, cookiephoning],
-
-
-                        extend : "l’univers savoureux d’O’Cookies, où la simplicité rencontre la qualité. Des cookies uniques  confectionnés avec soin, mettant en avant des ingrédients de première qualité" } ,
+                      
 
 
 
@@ -139,7 +123,7 @@ export const SLIDE = [
                     {
                       
                       
-                      id:5,
+                      id:4,
 
 
                       img :BM,
@@ -163,7 +147,7 @@ export const SLIDE = [
                       {
                       
                       
-                        id:6,
+                        id:5,
   
   
                         img :isola, 
@@ -178,7 +162,7 @@ export const SLIDE = [
   
                          stack : [SiShopify] ,
   
-                          slide : [ isolap, logorbb,logorbb],
+                          slide : [ isolap, isophone, isotab],
                           extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année  ! "
                         
                         
