@@ -81,7 +81,7 @@ export default function Usabout() {
         initial={{scaleX : 0}}
         animate={{scaleX : 1}}
         transition={{duration:  .5 , }}
-        className='h-[3px] bg-lightText dark:bg-darkText w-[100%] mb-2 md:mb-12'></motion.div>
+        className='h-[3px] bg-lightText dark:bg-darkText w-[100%] mb-2 '></motion.div>
             
             </div>
 
