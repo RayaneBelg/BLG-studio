@@ -39,6 +39,7 @@ import cookiephoning from "../../public/cookiephoning.png";
 import climwhite from "../../public/climwhite.png"
 import cookwhite from "../../public/cookwhite.png"
 import jibwhite from "../../public/jibwhite.png"
+import { SiGoogleanalytics } from "react-icons/si";
 
 import cookiegood from "../../public/cookiegood.png";
 
@@ -82,7 +83,7 @@ export const SLIDE = [
 
                              service : "Site web - Stratégie digitale (SMO - SEO)", 
 
-                             stack : [FaReact , SiNextdotjs , SiGooglesearchconsole ] ,
+                             stack : [FaReact , SiNextdotjs , SiGooglesearchconsole , SiGoogleanalytics ] ,
 
                              laptop : climaxlaptop , 
 
@@ -104,10 +105,10 @@ export const SLIDE = [
                           
                           desc  :'La Fabrique à Biscuit' , 
                           
-                          service : "Boutique E-commerce , Social Media Strategy , Analytics", 
+                          service : "Boutique E-commerce , Analytics", 
                           
                           
-                          stack : [ FaWordpress, SiWoocommerce ] , 
+                          stack : [ FaWordpress, SiWoocommerce , SiGooglesearchconsole,SiGoogleanalytics ] , 
                           
                           laptop : cookietop ,
                           

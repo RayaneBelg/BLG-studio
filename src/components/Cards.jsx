@@ -126,19 +126,19 @@ const {darkMode} =useContext(DarkModeContext);
               transition={{duration : .8 , delay : .8}} className="flex flex-col justify-around gap-3 md:gap-5 lg:w-[50%] items-start p-2    lg:h-[50vh]">
                   <motion.h1 
            
-              className="md:text-2xl text-2xl uppercase font-extrabold underline-offset-4 underline mt-4 flex gap-2"> {infos.id}. {infos.title}   <a href={infos.url} target="_blank" rel="noopener noreferrer">
+              className=" text-4xl uppercase font-extrabold underline-offset-4 underline mt-4 flex gap-2"> {infos.id}. {infos.title}   <a href={infos.url} target="_blank" rel="noopener noreferrer">
               <HiLink color="#8dbe22" size={30} />
             </a> 
               
               <img  className="h-[3vh]" src={   darkMode ? infos.imgdark : infos.img}></img>
               </motion.h1>
                  
-                <h1 className="text-xl uppercase font-bold dark:text-rose">{infos.desc}</h1>
+                <h1 className="text-2xl uppercase font-bold dark:text-rose">{infos.desc}</h1>
 
 
                 <div className="flex flex-col items-start">
-                <span className="text-lg font-bold uppercase dark:text-rose"> About :</span>
-                <p className=" text-justify text-xl ">
+                <span className="text-2xl font-bold uppercase dark:text-rose"> About :</span>
+                <p className=" text-justify text-2xl ">
                    {infos.extend}
                   </p>
 
@@ -147,7 +147,7 @@ const {darkMode} =useContext(DarkModeContext);
 
   <p className="flex flex-col items-start">
     <span className="text-lg font-bold uppercase dark:text-rose"> stack :</span>
-    <p className=" text-justify text-lg flex gap-2">
+    <p className=" text-justify text-lg flex gap-6">
   {infos.stack && infos.stack.map((Icon, index) => (
     <Icon key={index} size={45} />
   ))}
