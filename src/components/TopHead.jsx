@@ -35,7 +35,7 @@ const Navbar = () => {
 
       className="z-40 fixed flex items-center justify-center text-lightText bg-lightBg  dark:bg-lightText dark:text-rose  h-[4vh] w-[10vh] left-[50%] transform translate-x-[-50%]   font-bold uppercase font-teko text-xl  top-0 border-lightText border-2 dark:border-rose border-t-0 dark:hover:border-4 dark:hover:border-t-0 dark:active:border dark:active:border-t-0 transition-all 1s "
     >
-      <h1 className="">About</h1>
+      <h1 className="">À propos</h1>
 
       </motion.button>
 
@@ -84,7 +84,7 @@ const Navbar = () => {
                   } border-lightText text-lightText dark:border-rose p-2 text-xl uppercase dark:text-rose font-teko font-bold transition all duration-700`}
                 
                 >
-                  about me
+                  experiences
                 </motion.button>
               </div>
               

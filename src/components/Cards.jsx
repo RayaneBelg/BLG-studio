@@ -126,18 +126,18 @@ const {darkMode} =useContext(DarkModeContext);
               transition={{duration : .8 , delay : .8}} className="flex flex-col justify-around gap-3 md:gap-5 lg:w-[50%] items-start p-2    lg:h-[50vh]">
                   <motion.h1 
            
-              className=" text-4xl uppercase font-extrabold underline-offset-4 underline mt-4 flex gap-2"> {infos.id}. {infos.title}   <a href={infos.url} target="_blank" rel="noopener noreferrer">
-              <HiLink color="#8dbe22" size={30} />
+              className=" md:text-4xl text-2xl uppercase font-extrabold underline-offset-4 underline mt-4 flex gap-2"> {infos.id}. {infos.title}   <a href={infos.url} target="_blank" rel="noopener noreferrer">
+              <HiLink color="#8dbe22" size={3} />
             </a> 
               
-              <img  className="h-[3vh]" src={   darkMode ? infos.imgdark : infos.img}></img>
+              <img  className="h-[4vh]" src={   darkMode ? infos.imgdark : infos.img}></img>
               </motion.h1>
                  
                 <h1 className="text-2xl uppercase font-bold dark:text-rose">{infos.desc}</h1>
 
 
-                <div className="flex flex-col items-start">
-                <span className="text-2xl font-bold uppercase dark:text-rose"> About :</span>
+                <div className="flex flex-col items-start  my-2">
+                <span className="text-2xl font-bold uppercase dark:text-rose"> À propos :</span>
                 <p className=" text-justify text-2xl ">
                    {infos.extend}
                   </p>
@@ -145,16 +145,16 @@ const {darkMode} =useContext(DarkModeContext);
                 </div>
                
 
-  <p className="flex flex-col items-start">
-    <span className="text-lg font-bold uppercase dark:text-rose"> stack :</span>
-    <p className=" text-justify text-lg flex gap-6">
+  <p className="flex flex-col items-start  my-2">
+    <span className="text-2xl font-bold uppercase dark:text-rose"> technologies :</span>
+    <p className=" text-justify text-2xl flex gap-6">
   {infos.stack && infos.stack.map((Icon, index) => (
     <Icon key={index} size={45} />
   ))}
   </p>
 </p>   
-<p className="flex gap-2 items-center text-lg">
-    <span className="text-lg font-bold uppercase dark:text-rose"> Services:</span>
+<p className="flex flex-col gap-2 items-start text-2xl my-2">
+    <span className="text-2xl font-bold uppercase dark:text-rose"> Services:</span>
 {infos.service}
 </p> 
 

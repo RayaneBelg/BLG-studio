@@ -34,7 +34,7 @@ icon={<MdOutlineWork color='#334155' />}
 <h3 className=" text-2xl dark:text-darkText font-bold">{item.name}</h3>
 <h4 className="text-xl">{item.desc}</h4>
 <p className='  dark:text-darkText'>
-  Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+  {item.tech}
 </p>
 </VerticalTimelineElement>
 

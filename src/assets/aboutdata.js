@@ -29,8 +29,9 @@ export const ABOUTDATA = [
 
 export const SERVICES = [
  {   id : 1 ,
-    name : "WEBSITE CREATION" ,
-    desc : "stunning creative websites, e-commerce "
+    name : "Création de Site sur mesure" ,
+    desc : "E-commerce ou vitrine dans la technologie adaptée à votre projet  ",
+    tech : "Wordpress , WooCommerce, Shopify, React js , Next js "
 
 
 
@@ -39,8 +40,9 @@ export const SERVICES = [
 },
 
 {   id : 2 ,
-    name : "Digital Marketing" ,
-    desc : "stunning creative websites, e-commerce "
+    name : "Stratégie digitale" ,
+    desc : "Audit global et optimisations de vos performances digitales ",
+    tech : "SEO - Social Media Optimisation  - Marketing automation"
 
 
 

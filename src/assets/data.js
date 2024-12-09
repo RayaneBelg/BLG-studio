@@ -101,11 +101,11 @@ export const SLIDE = [
                           img :ocookies ,
                           imgdark :ocookies,
                           url:"https://ocookies.fr/",
-                          title : 'OCookies' , 
+                          title : "O'Cookies" , 
                           
                           desc  :'La Fabrique à Biscuit' , 
                           
-                          service : "Boutique E-commerce , Analytics", 
+                          service : "Boutique E-commerce  -  Analytics", 
                           
                           
                           stack : [ FaWordpress, SiWoocommerce , SiGooglesearchconsole,SiGoogleanalytics ] , 
@@ -165,9 +165,9 @@ export const SLIDE = [
   
                          desc  :'Rénovation Energétique' ,
   
-                         service : "E-commerce boutique",
+                         service : "Site web - Stratégie digitale",
   
-                         stack : [SiShopify] ,
+                         stack : [ FaWordpress,  SiGooglesearchconsole,SiGoogleanalytics ] ,
   
                           slide : [ isolap, isophone, isotab],
                           extend : "Spécialistes des travaux de rénovations energétiques , Isola Rhône Alpes oeuvre pour la réduction des consommations énergétiques des bâtiments depuis 2019. "
