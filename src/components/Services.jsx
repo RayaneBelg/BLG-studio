@@ -23,7 +23,7 @@ export default function Services() {
             className=''>
 
 <VerticalTimelineElement
-className=" font-teko "
+className=" font-teko text-start  "
 contentStyle={{ background: darkMode ?  "#334155" : '#d1d8d8' , color: darkMode ?  '#aae114' : "#334155"  , border : darkMode ? "2px solid #d1d8d8 " : "2px solid #334155" , borderRadius : '0' }}
 contentArrowStyle={{ borderRight: '10px solid  #aae114' }}
 

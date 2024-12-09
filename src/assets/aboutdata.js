@@ -1,4 +1,13 @@
 export const ABOUTDATA = [
+
+    {
+        id : 0 ,
+        position : "Digital Project Manager",
+        company : "Publika",
+        date : "sept.2021 - jan. 2023",
+        
+        tasks : ["Competitive Analysis" , "Measurement optimisation" , "Marketing Automation" , ]
+    },
     {
         id : 1 ,
         position : "Product Growth Manager",
@@ -24,7 +33,7 @@ export const ABOUTDATA = [
         date : "sept.2021 - jan. 2023",
         
         tasks : ["Competitive Analysis" , "Measurement optimisation" , "Marketing Automation" , ]
-    }
+    } 
 ]
 
 export const SERVICES = [

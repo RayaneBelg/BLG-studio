@@ -20,7 +20,7 @@ export default function Timeline() {
             className=''>
 
 <VerticalTimelineElement
-className=" font-teko "
+className=" font-teko  text-start  "
 contentStyle={{ background: darkMode ?  "#334155" : '#d1d8d8' , color: darkMode ?  '#aae114' : "#334155"  , border : darkMode ? "2px solid #d1d8d8 " : "2px solid #334155" , borderRadius : '0' }}
 contentArrowStyle={{ borderRight: '10px solid  #aae114' }}
 
@@ -28,11 +28,11 @@ date={item.date}
 iconStyle={{ background: '#aae114',  }}
 icon={<MdOutlineWork color='#334155' />}
 >
-<h3 className=" text-2xl dark:text-darkText font-bold">{item.position}</h3>
+<h3 className=" text-xl dark:text-darkText font-bold uppercase">{item.position}</h3>
 <h4 className="text-xl">{item.company}</h4>
-<p className='dark:text-darkText'>
-  Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-</p>
+<ul className='dark:text-darkText text-xl'>
+  {item.tasks.map((task , id)=>( <li>{task}</li> ))}
+</ul>
 </VerticalTimelineElement>
 
             </VerticalTimeline>
