@@ -31,6 +31,9 @@ import bmtab from "../../public/bmtab.png"
 import phoemillion from "../../public/phoemillion.png"
 import { FaWordpress } from "react-icons/fa";
 import { SiShopify } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
+import { SiGooglesearchconsole } from "react-icons/si";
+import { SiGoogletagmanager } from "react-icons/si";
 import logorbb from "../../public/logorbb.png";
 import cookiephoning from "../../public/cookiephoning.png";
 import climwhite from "../../public/climwhite.png"
@@ -53,10 +56,10 @@ export const SLIDE = [
                         imgdark :gmt ,
                          title : 'GRAND méchant' , 
                          desc : 'Créateur de mode ' , 
-                         service : "E-commerce boutique", 
+                         service : "Boutique E-commerce", 
                          stack : [FaWordpress , SiWoocommerce] ,
                            slide : [ gmtlaptop , gmtphone , tablet , ] , 
-                           extend : "Créateur de mode français, un style hautement illustré dans un univers dark cartoon ",
+                           extend : "Créateur de mode français, un style hautement illustré dans un univers dark cartoon",
                            url:"https://grandmechant.com/"
                           
                           
@@ -77,9 +80,9 @@ export const SLIDE = [
 
                             desc : "Club d'arts martiaux" ,
 
-                             service : "Website", 
+                             service : "Site web - Stratégie digitale (SMO - SEO)", 
 
-                             stack : [FaReact , FaWordpress] ,
+                             stack : [FaReact , SiNextdotjs , SiGooglesearchconsole ] ,
 
                              laptop : climaxlaptop , 
 
@@ -101,7 +104,7 @@ export const SLIDE = [
                           
                           desc  :'La Fabrique à Biscuit' , 
                           
-                          service : "E-commerce boutique",
+                          service : "Boutique E-commerce , Social Media Strategy , Analytics", 
                           
                           
                           stack : [ FaWordpress, SiWoocommerce ] , 
@@ -136,12 +139,12 @@ export const SLIDE = [
 
                        desc  :'FASHION DESIGNER' ,
 
-                       service : "E-commerce boutique",
+                       service : "Refonte site E-commerce, audit global de la stratégie digitale et optimisations ",
 
-                       stack : [SiShopify] ,
+                       stack : [SiShopify , SiGoogletagmanager] ,
 
                         slide : [ bmdesk, phoemillion , bmtab , ],
-                        extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année  ! "
+                        extend : "Streetwear haut de gamme , Batiste Million est implanté dans le paysage urbain français avec ses pièces iconiques"
                       
                       
                       },
@@ -166,7 +169,7 @@ export const SLIDE = [
                          stack : [SiShopify] ,
   
                           slide : [ isolap, isophone, isotab],
-                          extend : "Climax Fight Academy : L'excellence des sports de combat à Lyon. Une académie multi-sport ouverte toute l'année  ! "
+                          extend : "Spécialistes des travaux de rénovations energétiques , Isola Rhône Alpes oeuvre pour la réduction des consommations énergétiques des bâtiments depuis 2019. "
                         
                         
                         },

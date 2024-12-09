@@ -138,7 +138,7 @@ const {darkMode} =useContext(DarkModeContext);
 
                 <div className="flex flex-col items-start">
                 <span className="text-lg font-bold uppercase dark:text-rose"> About :</span>
-                <p className=" text-justify text-lg">
+                <p className=" text-justify text-xl ">
                    {infos.extend}
                   </p>
 
@@ -157,12 +157,7 @@ const {darkMode} =useContext(DarkModeContext);
     <span className="text-lg font-bold uppercase dark:text-rose"> Services:</span>
 {infos.service}
 </p> 
-<p className="flex gap-2 items-center">
-    <span className="text-lg font-bold uppercase dark:text-rose"> Key Figures :</span>
-  {infos.stack && infos.stack.map((Icon, index) => (
-    <Icon key={index} size={45} />
-  ))}
-</p> 
+
                  
                 
                 </motion.div>
