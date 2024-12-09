@@ -13,7 +13,7 @@ import { useContext } from 'react'
 import { DarkModeContext } from '../components/DarkModeProvider'
 export default function Usabout() {
     const title = "BLG STUDIO ®"
-    const desc = "I'm Rayane , a freelance developer,  I create web experiences to help businesses succeed online "
+    const desc = "Rayane B . développeur freelance et consultant en stratégie digitale "
     const { darkMode } = useContext(DarkModeContext);
   
 
@@ -59,7 +59,7 @@ export default function Usabout() {
 >
     
     {desc.split(" ").map((word, idx) => (
-        <motion.span className={idx === 4 || idx === 5 ? "text-rose outline-2 ": ""}
+        <motion.span className={idx === 3 || idx === 4 ? "text-rose outline-2 ": ""}
             key={idx} 
             initial={{ opacity: 0.1 , }}
             animate={{ opacity: 1, }}

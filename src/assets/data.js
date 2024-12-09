@@ -52,11 +52,12 @@ export const SLIDE = [
                         img : gmt ,
                         imgdark :gmt ,
                          title : 'GRAND méchant' , 
-                         desc : 'fashion designer ' , 
+                         desc : 'Créateur de mode ' , 
                          service : "E-commerce boutique", 
                          stack : [FaWordpress , SiWoocommerce] ,
                            slide : [ gmtlaptop , gmtphone , tablet , ] , 
-                           extend : "Créateur de mode français, un style hautement illustré dans un univers dark cartoon "
+                           extend : "Créateur de mode français, un style hautement illustré dans un univers dark cartoon ",
+                           url:"https://grandmechant.com/"
                           
                           
                           },// Red
@@ -95,7 +96,7 @@ export const SLIDE = [
                           
                           img :ocookies ,
                           imgdark :ocookies,
-                          
+                          url:"https://ocookies.fr/",
                           title : 'OCookies' , 
                           
                           desc  :'La Fabrique à Biscuit' , 
@@ -128,6 +129,7 @@ export const SLIDE = [
 
                       img :BM,
                       imgdark :BM ,
+                      url : "https://www.batistemillion.com/",
 
                       title : 'Batiste Million' ,
 
@@ -152,11 +154,12 @@ export const SLIDE = [
   
                         img :isola, 
                         imgdark :isola ,
+                        url:"https://isolarhonealpes.com/",
   
                         title : 'Isola Rhone Alpes' ,
   
   
-                         desc  :'Energies' ,
+                         desc  :'Rénovation Energétique' ,
   
                          service : "E-commerce boutique",
   

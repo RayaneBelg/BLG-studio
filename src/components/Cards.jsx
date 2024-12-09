@@ -65,10 +65,10 @@ const {darkMode} =useContext(DarkModeContext);
                
             
               {/* Slider Section */}
-              <div className="flex md:flex-row flex-col justify-between  md:items-center  w-[95%] md:h-[100%]  ">
+              <div className="flex lg:flex-row flex-col justify-between  lg:items-center  w-[95%] lg:h-[100%]  ">
                 {/* Slider */}
               {/* Slider Section */}
-<div className="flex flex-col justify-center items-center md:w-[50%] h-[min-content] relative   overflow-x-hidden ">
+<div className="flex flex-col justify-center items-center lg:w-[50%] h-[min-content] relative   overflow-x-hidden ">
   {/* Left Arrow */}
  
 
@@ -102,7 +102,7 @@ const {darkMode} =useContext(DarkModeContext);
      <motion.button
     
     
-    className=" dark:text-rose text-lightText cursor-pointer border-4 border-rose p-1"
+    className=" dark:text-rose text-lightText cursor-pointer border-4 border-lightText dark:border-rose p-1"
     onClick={handlePrev}
   >
     <BsChevronLeft className="text-2xl md:text-3xl" />
@@ -110,7 +110,7 @@ const {darkMode} =useContext(DarkModeContext);
   <motion.div
     
     
-     className=" dark:text-rose text-lightText cursor-pointer border-4 border-rose p-1"
+     className=" dark:text-rose text-lightText cursor-pointer border-4  border-lightText dark:border-rose p-1"
     onClick={handleNext}
   >
     <BsChevronRight  className=" text-2xl md:text-3xl" />
@@ -123,7 +123,7 @@ const {darkMode} =useContext(DarkModeContext);
                 {/* Info Section */}
                 <motion.div  initial={{opacity : 0}}
               animate={{opacity : 1}}
-              transition={{duration : .8 , delay : .8}} className="flex flex-col justify-around gap-3 md:gap-5 md:w-[50%] items-start p-2    md:h-[50vh]">
+              transition={{duration : .8 , delay : .8}} className="flex flex-col justify-around gap-3 md:gap-5 lg:w-[50%] items-start p-2    lg:h-[50vh]">
                   <motion.h1 
            
               className="md:text-2xl text-2xl uppercase font-extrabold underline-offset-4 underline mt-4 flex gap-2"> {infos.id}. {infos.title}   <a href={infos.url} target="_blank" rel="noopener noreferrer">
