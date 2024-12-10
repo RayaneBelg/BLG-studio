@@ -2,6 +2,7 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
 import { MdOutlineWork } from "react-icons/md";
+import { IoCodeSlash } from "react-icons/io5";
 import {SERVICES } from '../assets/aboutdata';
 import { useContext } from 'react';
 
@@ -29,7 +30,7 @@ contentArrowStyle={{ borderRight: '10px solid  #aae114' }}
 
 date={item.date}
 iconStyle={{ background: '#aae114',  }}
-icon={<MdOutlineWork color='#334155' />}
+icon={React.createElement(item.icon, { color: '#334155' })}
 >
 <h3 className=" text-2xl dark:text-darkText font-bold">{item.name}</h3>
 <h4 className="text-xl">{item.desc}</h4>

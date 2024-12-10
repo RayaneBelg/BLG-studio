@@ -126,8 +126,9 @@ const {darkMode} =useContext(DarkModeContext);
               transition={{duration : .8 , delay : .8}} className="flex flex-col justify-around gap-3 md:gap-5 lg:w-[50%] items-start p-2    lg:h-[50vh]">
                   <motion.h1 
            
-              className=" md:text-4xl text-2xl uppercase font-extrabold underline-offset-4 underline mt-4 flex gap-2"> {infos.id}. {infos.title}   <a href={infos.url} target="_blank" rel="noopener noreferrer">
-              <HiLink color="#8dbe22" size={3} />
+              className=" md:text-4xl text-2xl uppercase font-extrabold underline-offset-4 underline mt-4 flex gap-2"> {infos.id}. {infos.title}  
+               <a href={infos.url} target="_blank" rel="noopener noreferrer">
+              <HiLink color="#8dbe22" size={30} />
             </a> 
               
               <img  className="h-[4vh]" src={   darkMode ? infos.imgdark : infos.img}></img>

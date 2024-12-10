@@ -11,7 +11,7 @@ import { DarkModeContext } from './DarkModeProvider';
 export default function Timeline() {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className=' flex flex-col items-center w-full'>
+    <div className=' flex flex-col items-center md:w-[50vh] '>
      {
         ABOUTDATA.map((item , id)=>(
             <VerticalTimeline
@@ -30,9 +30,7 @@ icon={<MdOutlineWork color='#334155' />}
 >
 <h3 className=" text-xl dark:text-darkText font-bold uppercase">{item.position}</h3>
 <h4 className="text-xl">{item.company}</h4>
-<ul className='dark:text-darkText text-xl'>
-  {item.tasks.map((task , id)=>( <li>{task}</li> ))}
-</ul>
+
 </VerticalTimelineElement>
 
             </VerticalTimeline>
