@@ -26,7 +26,7 @@ export const ABOUTDATA = [
         id : 2 ,
         position : "Digital Project Manager",
         company : "Publika - Barcelone, ES",
-        date : "sept.2021 - jan. 2023",
+        date : "mar.2020 - sept. 2020",
         
         tasks : ["Competitive Analysis" , "Measurement optimisation" , "Marketing Automation" , ]
     },
