@@ -76,7 +76,7 @@ export default function Usabout() {
             <div className='overflow-hidden flex flex-col mb-1 '>
                 <motion.h1 initial={{ opacity: 0 , y : 200}}
             animate={{ opacity: 1,  y : 0}}
-            transition={{ duration :  1 , delay : 1}} className='uppercase font-teko font-bold md:text-2xl text-xl text-lightText dark:text-darkText'>Work</motion.h1>
+            transition={{ duration :  1 , delay : 1}} className='uppercase font-teko font-bold md:text-2xl text-xl text-lightText dark:text-darkText'>Selected Work</motion.h1>
              <motion.div 
         initial={{scaleX : 0}}
         animate={{scaleX : 1}}
