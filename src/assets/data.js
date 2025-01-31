@@ -100,7 +100,7 @@ export const SLIDE = [
                           
                           img :ocookies ,
                           imgdark :ocookies,
-                          url:"https://ocookies.fr/",
+                          url:"https://ocookies.vercel.app/",
                           title : "O'Cookies" , 
                           
                           desc  :'La Fabrique à Biscuit' , 
