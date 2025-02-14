@@ -76,7 +76,7 @@ export const SLIDE = [
 
       slide : [ rosaphone, rosatab],
 
-      extend : "Spécialistes des travaux de rénovations energétiques , Isola Rhône Alpes oeuvre pour la réduction des consommations énergétiques des bâtiments depuis 2019. "
+      extend : "Rosa restraurant.... "
     
     
     },

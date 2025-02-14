@@ -23,7 +23,7 @@ export default function Usabout() {
             {/* Header Section */}
             <div className='flex-col flex  justify-center    p-2 overflow-hidden'>
                 <div className='font-serif font-bold uppercase text-[7vw]    flex items-center  overflow-hidden flex-col text-lightText dark:text-darkText'>
-                    <div className='flex items-center justify-centeroverflow-hidden  mb-2 md:mt-7 '>
+                    <div className='flex items-center justify-centeroverflow-hidden  mb-2 md:mt-2 '>
 
                   
                  
@@ -62,7 +62,7 @@ export default function Usabout() {
                 
                 <motion.div 
 
-    className='gap-1 font-teko scrollbar-track-slate-500   text-lightText dark:text-darkText font-bold  flex items-end justify-center overflow-hidden flex-wrap  p-2 my-2 text-md sm:text-3xl'
+    className='gap-1 font-teko scrollbar-track-slate-500   text-lightText dark:text-darkText font-bold  flex items-end justify-center overflow-hidden flex-wrap  p-2 my-2 text-md sm:text-lg '
 >
     
     {desc.split(" ").map((word, idx) => (
