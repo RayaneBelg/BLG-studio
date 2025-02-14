@@ -13,7 +13,7 @@ import { useContext } from 'react'
 import { DarkModeContext } from '../components/DarkModeProvider'
 export default function Usabout() {
     const title = "BLG STUDIO ®"
-    const desc = "Rayane B . développeur freelance et consultant en stratégie digitale "
+    const desc = "Développeur freelance et consultant en stratégie digitale, j'accompagne votre entreprise dans sa croissance en ligne"
     const { darkMode } = useContext(DarkModeContext);
   
 
@@ -23,12 +23,12 @@ export default function Usabout() {
             {/* Header Section */}
             <div className='flex-col flex  justify-center    p-2 overflow-hidden'>
                 <div className='font-serif font-bold uppercase text-[7vw]    flex items-center  overflow-hidden flex-col text-lightText dark:text-darkText'>
-                    <div className='flex items-center justify-centeroverflow-hidden mt-4 mb-2 md:mt-7 '>
+                    <div className='flex items-center justify-centeroverflow-hidden  mb-2 md:mt-7 '>
 
                   
                  
 
-        <motion.img
+       {/* <motion.img
        // Ensure animations are tied to the current slide
        src={ darkMode ?  logorbb : logobrightt}
      
@@ -43,23 +43,30 @@ export default function Usabout() {
         mass: 0.5,        // Affects how heavy the spring feels
         duration: 1.5,    // Ensures the animation finishes in 0.9 seconds
       }}
-    />
+    /> */}
+       <div className='overflow-hidden flex flex-col  '>
+                <motion.h1 initial={{ opacity: 0 , y : 200}}
+            animate={{ opacity: 1,  y : 0}}
+            transition={{ duration :  1 , delay : 1}} className='uppercase font-teko font-bold md:text-3xl text-xl text-lightText dark:text-darkText'>Rayane B.</motion.h1>
+           
+            
+            </div>
         
          </div>
         <motion.div 
         initial={{scaleX : 0}}
         animate={{scaleX : 1}}
         transition={{duration:  .5}}
-        className='h-[3px] bg-lightText dark:bg-darkText w-[80%] '></motion.div>
+        className='h-[3px] bg-lightText dark:bg-rose w-[80%] '></motion.div>
                 </div>
                 
                 <motion.div 
 
-    className='gap-1 font-teko scrollbar-track-slate-500   text-lightText dark:text-darkText font-bold uppercase flex items-end justify-center overflow-hidden flex-wrap  p-2 my-2'
+    className='gap-1 font-teko scrollbar-track-slate-500   text-lightText dark:text-darkText font-bold  flex items-end justify-center overflow-hidden flex-wrap  p-2 my-2 text-md sm:text-3xl'
 >
     
     {desc.split(" ").map((word, idx) => (
-        <motion.span className={idx === 3 || idx === 4 ? "text-rose outline-2 ": ""}
+        <motion.span className={`${idx === 0 || idx === 1 ? "text-rose outline-2 ": ""} `}
             key={idx} 
             initial={{ opacity: 0.1 , }}
             animate={{ opacity: 1, }}
@@ -76,12 +83,12 @@ export default function Usabout() {
             <div className='overflow-hidden flex flex-col mb-1 '>
                 <motion.h1 initial={{ opacity: 0 , y : 200}}
             animate={{ opacity: 1,  y : 0}}
-            transition={{ duration :  1 , delay : 1}} className='uppercase font-teko font-bold md:text-2xl text-xl text-lightText dark:text-darkText'>Selected Work</motion.h1>
+            transition={{ duration :  1 , delay : 1}} className='uppercase font-teko font-bold md:text-2xl text-xl text-lightText dark:text-darkText'>Projets Récents</motion.h1>
              <motion.div 
         initial={{scaleX : 0}}
         animate={{scaleX : 1}}
         transition={{duration:  .5 , }}
-        className='h-[3px] bg-lightText dark:bg-darkText w-[100%] mb-2 '></motion.div>
+        className='h-[3px] bg-lightText dark:bg-rose w-[100%] mb-2 '></motion.div>
             
             </div>
 

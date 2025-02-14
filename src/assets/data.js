@@ -1,7 +1,7 @@
 import climax from "../../public/climax.png"
 import box from "../../public/box.png"
 import ocookies from "../../public/ocookies.png"
-import isola from "../../public/isola.png"
+import isola from "../../public/logoiso.png"
 import isophone from "../../public/isophone.png"
 import isotab from "../../public/isotab.png"
 import isolap from "../../public/isolap.png"
@@ -39,6 +39,11 @@ import cookiephoning from "../../public/cookiephoning.png";
 import climwhite from "../../public/climwhite.png"
 import cookwhite from "../../public/cookwhite.png"
 import jibwhite from "../../public/jibwhite.png"
+import logobmwhite from "../../public/logobmm.png"
+import rosa  from "../../public/toquewhite3.png"
+import rosaphone  from "../../public/rosaphone.png"
+import rosatab  from "../../public/rosatab.png"
+import rosadeux  from "../../public/rosaheader.png"
 import { SiGoogleanalytics } from "react-icons/si";
 
 import cookiegood from "../../public/cookiegood.png";
@@ -49,22 +54,33 @@ import cookiegood from "../../public/cookiegood.png";
 
 
 export const SLIDE = [
-                    {                    
-      
-      
-                        id:1 ,
-                        img : gmt ,
-                        imgdark :gmt ,
-                         title : 'GRAND méchant' , 
-                         desc : 'Créateur de mode ' , 
-                         service : "Boutique E-commerce", 
-                         stack : [FaWordpress , SiWoocommerce] ,
-                           slide : [ gmtlaptop , gmtphone , tablet , ] , 
-                           extend : "Créateur de mode français, un style hautement illustré dans un univers dark cartoon",
-                           url:"https://grandmechant.com/"
-                          
-                          
-                          },// Red
+
+  {
+                      
+                      
+    id:1,
+
+
+    img :rosa, 
+    imgdark :rosa ,
+    url:"https://www.rosalyon.fr/",
+
+    title : 'Rosa ' ,
+
+
+     desc  :'café restaurant' ,
+
+     service : "Site web - Stratégie digitale",
+
+      stack : [FaReact , SiNextdotjs , SiGooglesearchconsole , SiGoogleanalytics ] ,
+
+      slide : [ rosaphone, rosatab],
+
+      extend : "Spécialistes des travaux de rénovations energétiques , Isola Rhône Alpes oeuvre pour la réduction des consommations énergétiques des bâtiments depuis 2019. "
+    
+    
+    },
+              
 
 
 
@@ -99,7 +115,7 @@ export const SLIDE = [
                          {id:3 ,
                           
                           img :ocookies ,
-                          imgdark :ocookies,
+                          imgdark :cookwhite,
                           url:"https://ocookies.vercel.app/",
                           title : "O'Cookies" , 
                           
@@ -132,7 +148,7 @@ export const SLIDE = [
 
 
                       img :BM,
-                      imgdark :BM ,
+                      imgdark :logobmwhite ,
                       url : "https://www.batistemillion.com/",
 
                       title : 'Batiste Million' ,
@@ -174,6 +190,27 @@ export const SLIDE = [
                         
                         
                         },
+                        {                    
+      
+      
+                          id:6 ,
+                          img : gmt ,
+                          imgdark :gmt ,
+                           title : 'GRAND méchant' , 
+                           desc : 'Créateur de mode ' , 
+                           service : "Boutique E-commerce", 
+                           stack : [FaWordpress , SiWoocommerce] ,
+                             slide : [ gmtlaptop , gmtphone , tablet , ] , 
+                             extend : "Créateur de mode français, un style hautement illustré dans un univers dark cartoon",
+                             url:"https://grandmechant.com/"
+                            
+                            
+                            },// Red
+
+                       
+  
+
+                        
 
                    
      // Blue

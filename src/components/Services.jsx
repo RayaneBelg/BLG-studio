@@ -19,21 +19,21 @@ export default function Services() {
     {
         SERVICES.map((item , id)=>(
             <VerticalTimeline
-            lineColor={darkMode ? '#d1d8d8' : "#334155"}
+            lineColor={darkMode ? '#3fcf8e' : "#334155"}
             layout=''
             className=''>
 
 <VerticalTimelineElement
-className=" font-teko text-start  "
-contentStyle={{ background: darkMode ?  "#334155" : '#d1d8d8' , color: darkMode ?  '#aae114' : "#334155"  , border : darkMode ? "2px solid #d1d8d8 " : "2px solid #334155" , borderRadius : '0' }}
-contentArrowStyle={{ borderRight: '10px solid  #aae114' }}
+className=" font-teko text-start "
+contentStyle={{ background: darkMode ?  "linear-gradient(to bottom, #0C0F1A, #0A0D17) " : '#d1d8d8' , color: darkMode ?  '#aae114' : "#334155"  , border : darkMode ? "2px solid #4C5FD5 " : "2px solid #334155" , borderRadius : '0' }}
+contentArrowStyle={{ borderRight: '10px solid  #4C5FD5' }}
 
 date={item.date}
-iconStyle={{ background: '#aae114',  }}
-icon={React.createElement(item.icon, { color: '#334155' })}
+iconStyle={{ background: '#3FCF8E',  }}
+icon={React.createElement(item.icon, { color: '#4C5FD5' })}
 >
 <h3 className=" text-2xl dark:text-darkText font-bold">{item.name}</h3>
-<h4 className="text-xl">{item.desc}</h4>
+<h4 className="text-xl text-rose">{item.desc}</h4>
 <p className='  dark:text-darkText'>
   {item.tech}
 </p>

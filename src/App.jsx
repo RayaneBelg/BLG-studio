@@ -12,6 +12,7 @@ import CardGrid from "./components/CardGrid"
 import SlideModal from "./components/SlideModal"
 import { useEffect , useState } from "react"
 import { motion } from "framer-motion"
+import Bottom from "./components/Bottom"
 
 function App() {
 
@@ -30,7 +31,8 @@ function App() {
   return (
    
 
-   <div className="h-dvh overflow-hidden p-2  dark:bg-DarkBg bg-lightBg transition-all duration-700 origin-top cursor-none">
+   <div className="h-dvh overflow-hidden   dark:bg-gradient-porto bg-lightBg transition-all duration-700 origin-top cursor-none">
+{/* Gradient Glow Effect (Bleu-Violet) */}
 
 <motion.div
         className="fixed top-0 left-0 w-2.5 h-2.5 bg-DarkBg dark:bg-rose rounded-full pointer-events-none z-50"
@@ -61,9 +63,9 @@ function App() {
    
    
   
+  <Bottom/>
   
-  
-   <DarkModeToggle/>
+   
    
    
    
