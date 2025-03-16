@@ -68,9 +68,9 @@ const {darkMode} =useContext(DarkModeContext);
             >
               <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(76,95,213,0.3)_0%,rgba(12,16,36,0)_70%)] pointer-events-none z-[-1]" />
               {/* Slider Section */}
-              <div className="flex lg:flex-row flex-col justify-between lg:items-center w-[95%] lg:h-[100%]">
+              <div className="flex lg:flex-row flex-col justify-between lg:items-center w-[95%] lg:h-[100%] ">
                 {/* Slider */}
-                <div className="flex flex-col justify-center items-center lg:w-[50%] h-[min-content] relative overflow-x-hidden">
+                <div className="flex flex-col justify-center items-center lg:w-[50%] h-[min-content] relative overflow-x-hidden order-2">
                   {/* Slide Image */}
                   {infos.slide && infos.slide.length > 0 && (
                     <motion.img
@@ -113,12 +113,12 @@ const {darkMode} =useContext(DarkModeContext);
                 <motion.div initial={{opacity: 0}}
                   animate={{opacity: 1}}
                   transition={{duration: 0.8, delay: 0.8}}
-                  className="flex flex-col justify-around gap-3 md:gap-5 lg:w-[50%] items-start p-2 lg:h-[50vh]"
+                  className="flex flex-col justify-start gap-3 md:gap-5 lg:w- items-start p-2 lg:h-[50vh]"
                 >
                
                   <div className=" flex items-center gap-4">
                   <motion.h1 className="md:text-4xl text-xl uppercase font-extrabold underline-offset-4 underline mt-4 flex gap-2">
-                    {infos.id}. {infos.title}  
+                     <img className="h-[6vh]" src={darkMode ? infos.imgdark : infos.img} />
                     <a href={infos.url} target="_blank" rel="noopener noreferrer" className="text-rose">
                       <HiLink  size={30} />
                     </a> 
@@ -131,14 +131,14 @@ const {darkMode} =useContext(DarkModeContext);
 
                   <div className=" flex items-center gap-4">
                   <h1 className="text-xl uppercase font-bold dark:text-rose">{infos.desc} </h1>
-                  <img className="h-[4vh]" src={darkMode ? infos.imgdark : infos.img} />
+                  
                  
                   </div>
                   
                   
-                  <div className="flex flex-col items-start my-2">
+                  <div className="flex flex-col items-start my-2 ">
                    
-                    <p className="text-justify text-2xl">{infos.extend}</p>
+                    <p className="text-justify text-2xl ">{infos.extend}</p>
                   </div>
 
                   <p className="flex flex-col items-start my-2">
@@ -154,12 +154,15 @@ const {darkMode} =useContext(DarkModeContext);
                     <span className="text-2xl font-bold uppercase dark:text-rose">Services:</span>
                     {infos.service}
                   </p>
-                </motion.div>
-              </div>
 
-              <button onClick={closeModal} className="absolute right-2 text-xl md:text-3xl font-extrabold text-rose p-2 top-2">
+                  <button onClick={closeModal} className="absolute right-2 text-xl md:text-3xl font-extrabold text-rose p-2 top-2 z-50">
                 <ImCross />
               </button>
+                </motion.div>
+              
+              </div>
+
+             
             </motion.div>
           </motion.div>
         )}
