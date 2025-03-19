@@ -31,7 +31,7 @@ const Navbar = () => {
             onClick={(e) => e.stopPropagation()}
             className="bg-lightBg dark:bg-gradient-porto overflow-y-auto shadow-xl text-center opacity-100 shadow-lightText h-[70vh] md:h-[60vh] w-[90%] md:w-auto flex flex-col items-center scrollbar scrollbar-thumb-rose md:scrollbar-track-slate-700 border-lightText dark:border-rose border p-4 gap-4"
           >
-            <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(76,95,213,0.3)_0%,rgba(12,16,36,0)_70%)] pointer-events-none" />
+            <div className="absolute flex  inset-0 bg-[radial-gradient(circle,rgba(76,95,213,0.3)_0%,rgba(12,16,36,0)_70%)] pointer-events-none" />
             <Services />
           </div>
         </div>

@@ -14,6 +14,8 @@ import { useEffect , useState } from "react"
 import { motion } from "framer-motion"
 import Bottom from "./components/Bottom"
 
+
+
 function App() {
 
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });

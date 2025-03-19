@@ -70,13 +70,13 @@ export const SLIDE = [
 
      desc  :'café restaurant' ,
 
-     service : "Site web - Stratégie digitale",
+     service : "Site web - Stratégie digitale (SMO - SEO)",
 
       stack : [FaReact , SiNextdotjs , SiGooglesearchconsole , SiGoogleanalytics ] ,
 
       slide : [ rosaphone, rosatab],
 
-      extend : "Rosa restraurant.... "
+      extend : "Le Rosa propose de la cuisine de brasserie généreuse et authentique dans le 9ème arrondissement de Lyon  "
     
     
     },
@@ -112,29 +112,7 @@ export const SLIDE = [
                             
                             
                             // Green
-                         {id:3 ,
-                          
-                          img :ocookies ,
-                          imgdark :cookwhite,
-                          url:"https://ocookies.vercel.app/",
-                          title : "O'Cookies" , 
-                          
-                          desc  :'La Fabrique à Biscuit' , 
-                          
-                          service : "Boutique E-commerce  -  Analytics", 
-                          
-                          
-                          stack : [ FaWordpress, SiWoocommerce , SiGooglesearchconsole,SiGoogleanalytics ] , 
-                          
-                          laptop : cookietop ,
-                          
-                          phone : phonecook , 
-                          
-                          slide : [ cookietop, cookiephone, cookietab, ],
-                          extend : "l’univers savoureux d’O’Cookies, où la simplicité rencontre la qualité. Des cookies uniques  confectionnés avec soin, mettant en avant des ingrédients de première qualité"
                         
-                        },
-
                       
 
 
@@ -144,7 +122,7 @@ export const SLIDE = [
                     {
                       
                       
-                      id:4,
+                      id:3,
 
 
                       img :BM,
@@ -156,15 +134,31 @@ export const SLIDE = [
 
                        desc  :'FASHION DESIGNER' ,
 
-                       service : "Refonte site E-commerce, audit global de la stratégie digitale et optimisations ",
+                       service : "Refonte  de la boutique E-commerce, audit global de la stratégie digitale  ",
 
-                       stack : [SiShopify , SiGoogletagmanager] ,
+                       stack : [SiShopify , SiGoogletagmanager , SiGoogleanalytics] ,
 
                         slide : [ bmdesk, phoemillion , bmtab , ],
                         extend : "Streetwear haut de gamme , Batiste Million est implanté dans le paysage urbain français avec ses pièces iconiques"
                       
                       
                       },
+                      {                    
+      
+      
+                        id:4 ,
+                        img : gmt ,
+                        imgdark :gmt ,
+                         title : 'GRAND méchant' , 
+                         desc : 'Créateur de mode ' , 
+                         service : "Boutique E-commerce", 
+                         stack : [FaWordpress , SiWoocommerce] ,
+                           slide : [ gmtlaptop , gmtphone , tablet , ] , 
+                           extend : "Créateur de mode français, un style hautement illustré dans un univers dark cartoon",
+                           url:"https://grandmechant.com/"
+                          
+                          
+                          },
 
                       {
                       
@@ -181,7 +175,7 @@ export const SLIDE = [
   
                          desc  :'Rénovation Energétique' ,
   
-                         service : "Site web - Stratégie digitale",
+                         service : "Site web - Stratégie référencement naturel (SEO)",
   
                          stack : [ FaWordpress,  SiGooglesearchconsole,SiGoogleanalytics ] ,
   
@@ -190,22 +184,7 @@ export const SLIDE = [
                         
                         
                         },
-                        {                    
-      
-      
-                          id:6 ,
-                          img : gmt ,
-                          imgdark :gmt ,
-                           title : 'GRAND méchant' , 
-                           desc : 'Créateur de mode ' , 
-                           service : "Boutique E-commerce", 
-                           stack : [FaWordpress , SiWoocommerce] ,
-                             slide : [ gmtlaptop , gmtphone , tablet , ] , 
-                             extend : "Créateur de mode français, un style hautement illustré dans un univers dark cartoon",
-                             url:"https://grandmechant.com/"
-                            
-                            
-                            },// Red
+                        ,// Red
 
                        
   
