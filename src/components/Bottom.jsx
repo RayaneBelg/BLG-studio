@@ -10,7 +10,7 @@ export default function Bottom() {
 
      className="  dark:text-rose  p-2   font-bold uppercase font-teko text-xl   border-rose border-2  border-b-0"
    >
-     <h1 className="">contact@blgdev.fr</h1>
+     <h1 className="">belgasmi.rayane1@gmail.com</h1>
 
      </motion.button>
 

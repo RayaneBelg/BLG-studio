@@ -61,25 +61,26 @@ export const SLIDE = [
     id:1,
 
 
-    img :rosa, 
-    imgdark :rosa ,
-    url:"https://www.rosalyon.fr/",
+    img :BM,
+    imgdark :logobmwhite ,
+    url : "https://www.batistemillion.com/",
 
-    title : 'Rosa ' ,
+    title : 'Batiste Million' ,
 
 
-     desc  :'café restaurant' ,
+     desc  :'FASHION DESIGNER' ,
 
-     service : "Site web - Stratégie digitale (SMO - SEO)",
+     service : "Refonte  de la boutique E-commerce, audit global de la stratégie digitale  ",
 
-      stack : [FaReact , SiNextdotjs , SiGooglesearchconsole , SiGoogleanalytics ] ,
+     stack : [SiShopify , SiGoogletagmanager , SiGoogleanalytics] ,
 
-      slide : [ rosaphone, rosatab],
-
-      extend : "Le Rosa propose de la cuisine de brasserie généreuse et authentique dans le 9ème arrondissement de Lyon  "
+      slide : [ bmdesk, phoemillion , bmtab , ],
+      extend : "Streetwear haut de gamme , Batiste Million est implanté dans le paysage urbain français avec ses pièces iconiques"
     
     
     },
+
+
               
 
 
@@ -111,6 +112,31 @@ export const SLIDE = [
                             },
                             
                             
+                            {
+                      
+                      
+                              id:3,
+                          
+                          
+                              img :rosa, 
+                              imgdark :rosa ,
+                              url:"https://www.rosalyon.fr/",
+                          
+                              title : 'Rosa ' ,
+                          
+                          
+                               desc  :'café restaurant' ,
+                          
+                               service : "Site web - Stratégie digitale (SMO - SEO)",
+                          
+                                stack : [FaReact , SiNextdotjs , SiGooglesearchconsole , SiGoogleanalytics ] ,
+                          
+                                slide : [ rosaphone, rosatab],
+                          
+                                extend : "Le Rosa propose de la cuisine de brasserie généreuse et authentique dans le 9ème arrondissement de Lyon  "
+                              
+                              
+                              },
                             // Green
                         
                       
@@ -119,30 +145,7 @@ export const SLIDE = [
 
    
 
-                    {
-                      
-                      
-                      id:3,
-
-
-                      img :BM,
-                      imgdark :logobmwhite ,
-                      url : "https://www.batistemillion.com/",
-
-                      title : 'Batiste Million' ,
-
-
-                       desc  :'FASHION DESIGNER' ,
-
-                       service : "Refonte  de la boutique E-commerce, audit global de la stratégie digitale  ",
-
-                       stack : [SiShopify , SiGoogletagmanager , SiGoogleanalytics] ,
-
-                        slide : [ bmdesk, phoemillion , bmtab , ],
-                        extend : "Streetwear haut de gamme , Batiste Million est implanté dans le paysage urbain français avec ses pièces iconiques"
-                      
-                      
-                      },
+                   
                       {                    
       
       
